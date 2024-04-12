@@ -83,7 +83,7 @@ const width = 900;
 const height = 450;
 
 // Create the SVG element
-const svg = d3.select("#map")
+const svg = d3.select("#host_map")
     .append("svg")
     .attr("width", width)
     .attr("height", height);
