@@ -41,3 +41,65 @@ h1 {
 .tooltip.show {
     opacity: 1;
 }
+
+/* Style for x-axis label */
+.x-axis-label {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000; /* Gray */
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#chart {
+    margin-top: 20px;
+}
+
+/* Style for dropdown */
+select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+/* Style for axes */
+.axis text {
+    font-size: 14px;
+}
+
+/* Style for axis labels */
+.y-axis-label {
+    font-size: 16px;
+}
+
+.hover-text {
+    font-weight: bold;
+    fill: black;
+  }
