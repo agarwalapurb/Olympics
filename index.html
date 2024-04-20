@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seeing through the Rings : Unveiling Olympic History</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <h1>Host Cities and their performance over time</h1>
@@ -38,7 +39,6 @@
     </div>
     
     
-    
     <div class="container">
         <h1>Medals Data Visualization</h1>
         <div>
@@ -65,9 +65,8 @@
         </div>
         <div id="chartb"></div>
         <div id="x-axis-labelb" class="x-axis-label"></div>
-        <!-- Increase the size of the container to accommodate the legend -->
-        <div class="legend-container">
-            <svg class="legend"></svg>
+        <div id="bubble-description">
+            The size and color of bubbles denote Medal Count for <span id="selected-demographic">Age</span> in <span id="selected-sport">Aeronautics</span>.
         </div>
     </div>
 

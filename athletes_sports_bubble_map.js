@@ -212,7 +212,7 @@ var circles = svg
 	  var x, y;
 	  var safe = false;
 	  var count = 0;
-	  while (!safe && count < 300) {
+	  while (!safe && count < 1000) {
 		count++;
 		x = Math.random() * 4 * innerWidth / 5 + innerWidth / 10;
 		y = Math.random() * 4 * innerHeight / 5 + innerHeight / 10;
@@ -392,4 +392,16 @@ function createColorLegend(colorScale, svg) {
       return 1;
     }
   }
+});
+
+
+// Assuming you're using jQuery for simplicity
+$('#demographicb').change(function() {
+    var selectedDemographic = $(this).val();
+    $('#selected-demographic').text(selectedDemographic);
+});
+
+$('#sport').change(function() {
+    var selectedSport = $(this).val();
+    $('#selected-sport').text(selectedSport);
 });
