@@ -1,18 +1,17 @@
 // Set default season label
-document.getElementById('season-label').innerText = 'Summer';
+document.getElementById("season-label").innerText = "Summer";
 
 // Add event listener to update season label
-const seasonToggle = document.getElementById('season-toggle');
-const seasonLabel = document.getElementById('season-label');
+const seasonToggle = document.getElementById("season-toggle");
+const seasonLabel = document.getElementById("season-label");
 
-seasonToggle.addEventListener('change', function() {
-    if (this.checked) {
-        seasonLabel.innerText = 'Winter';
-    } else {
-        seasonLabel.innerText = 'Summer';
-    }
+seasonToggle.addEventListener("change", function () {
+  if (this.checked) {
+    seasonLabel.innerText = "Winter";
+  } else {
+    seasonLabel.innerText = "Summer";
+  }
 });
-
 
 // Load data from CSV file
 d3.csv("archive/athlete_events.csv")
@@ -110,11 +109,11 @@ d3.csv("archive/athlete_events.csv")
         .append("g")
         .attr("transform", `translate(${margin.left},${margin.top})`);
 
-      // Define color scale
+      // Define color scale with gradient
       const colorScale = d3
         .scaleLinear()
         .domain([0, d3.max(counts, (d) => d.count)])
-        .range(["#2c7bb6", "#0d4f91"]); // Darker color range
+        .range(["#ffcccc", "#ff6666"]); // lighter to darker red gradient
 
       // Define scales
       const x = d3.scaleBand().domain(ranges).range([0, width]).padding(0.1);
