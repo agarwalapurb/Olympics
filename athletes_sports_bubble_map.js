@@ -174,39 +174,81 @@ d3.csv("archive/athlete_events.csv").then(function (data) {
       .range([2, 20]);
 
     // Create axes
-    var yAxis = d3.axisLeft(yScale);
+    // var yAxis = d3.axisLeft(yScale);
 
-    svg
-      .append("g")
-      .attr("class", "x-axis")
-      .attr("transform", "translate(0," + innerHeight + ")")
-      .call(xAxis);
+    // svg
+    //   .append("g")
+    //   .attr("class", "x-axis")
+    //   .attr("transform", "translate(0," + innerHeight + ")")
+    //   .call(xAxis);
 
-    svg.append("g").attr("class", "y-axis").call(yAxis);
+    // svg.append("g").attr("class", "y-axis").call(yAxis);
 
 // Define color scale
 var colorScale = d3.scaleSequential(d3.interpolateViridis)
   .domain([0, d3.max(medalCounts, (d) => d.value)]);
 
 
-
-// Create bubbles
+// Create bubbles with collision detection
 var circles = svg
   .selectAll("circle")
   .data(medalCounts)
   .enter()
   .append("circle")
-  .attr("cx", (d) => {
-    if (selectedDemographic === "Sex") {
-      // Assign x-coordinates for "M" and "F"
-      return xScale(d.key) + xScale.bandwidth() / 2;
-    } else {
-      return xScale(d.key);
-    }
-  })
-  .attr("cy", (d) => yScale(d.value))
-  .attr("r", (d) => radiusScale(d.value))
-  .style("fill", (d) => colorScale(d.value));
+  .attr("r", (d) => 2.5 * radiusScale(d.value))
+  .style("fill", (d) => colorScale(d.value))
+  .call(positionBubbles);
+
+  function positionBubbles(selection) {
+	selection.each(function(d) {
+	  var bubble = d3.select(this);
+	  
+	  // Skip writing text for smaller bubbles
+	  if (3 * radiusScale(d.value) < 17) {
+		return;
+	  }
+	  
+	  // Position the bubble
+	  var x, y;
+	  var safe = false;
+	  var count = 0;
+	  while (!safe && count < 300) {
+		count++;
+		x = Math.random() * 4 * innerWidth / 5 + innerWidth / 10;
+		y = Math.random() * 4 * innerHeight / 5 + innerHeight / 10;
+		safe = true;
+		// Check for collisions with existing bubbles
+		svg.selectAll("circle").each(function() {
+		  var dx = parseFloat(d3.select(this).attr("cx")) - x;
+		  var dy = parseFloat(d3.select(this).attr("cy")) - y;
+		  if (Math.sqrt(dx * dx + dy * dy) < radiusScale(d.value) * 2.5) {
+			safe = false;
+		  }
+		});
+	  }
+	  
+	  // Set the position of the bubble
+	  bubble.attr("cx", x).attr("cy", y);
+	  
+	  // Calculate the brightness of the bubble's color
+	  var colorBrightness = d3.lab(colorScale(d.value)).l;
+  
+	  // Add text representing range/category
+	  svg.append("text")
+		.attr("x", x)
+		.attr("y", y)
+		.attr("text-anchor", "middle")
+		.attr("alignment-baseline", "middle")
+		.text(selectedDemographic === "Sex" ? d.key : (d.key * getGroupSize(selectedDemographic) + "-" + (d.key + 1) * getGroupSize(selectedDemographic)))
+		.attr("font-size", "10px")
+		.attr("fill", colorBrightness > 70 ? "black" : "white") // Adjust brightness threshold as needed
+		.attr("font-family", "Arial, sans-serif"); // Change font family if needed
+	});
+  }
+  
+  
+
+
 
 // Create a div for the tooltip
 var tooltip = d3.select("body").append("div")
@@ -315,22 +357,22 @@ function createColorLegend(colorScale, svg) {
   
   
     // Add labels
-    svg
-      .append("text")
-      .attr("class", "x-axis-label")
-      .attr("x", innerWidth / 2)
-      .attr("y", innerHeight + margin.top + 10)
-      .style("text-anchor", "middle")
-      .text(selectedDemographic);
+    // svg
+    //   .append("text")
+    //   .attr("class", "x-axis-label")
+    //   .attr("x", innerWidth / 2)
+    //   .attr("y", innerHeight + margin.top + 10)
+    //   .style("text-anchor", "middle")
+    //   .text(selectedDemographic);
 
-    svg
-      .append("text")
-      .attr("class", "y-axis-label")
-      .attr("transform", "rotate(-90)")
-      .attr("x", -innerHeight / 2)
-      .attr("y", -margin.left + 10)
-      .style("text-anchor", "middle")
-      .text("Number of Medals");
+    // svg
+    //   .append("text")
+    //   .attr("class", "y-axis-label")
+    //   .attr("transform", "rotate(-90)")
+    //   .attr("x", -innerHeight / 2)
+    //   .attr("y", -margin.left + 10)
+    //   .style("text-anchor", "middle")
+    //   .text("Number of Medals");
   }
 
   // Call updateBubbleMap initially
