@@ -10,10 +10,17 @@
     <h1>Host Cities and their performance over time</h1>
     <h2>Host Cities</h2>
     <div id="host_map"></div>
-
+    
+    <div class="season-toggle-container">
+        <label for="season-toggle">Season:</label>
+        <div class="season-toggle">
+            <input type="checkbox" id="season-toggle">
+            <label for="season-toggle" class="toggle-label"></label>
+            <span id="season-label">Summer</span>
+        </div>
+    </div>
     <!-- <h2>Performance over Time</h2> -->
     <!-- <div id="host_line_chart"></div> -->
-    
     <div class="container">
         <h1>Medals Data Visualization</h1>
         <div>
@@ -28,12 +35,14 @@
         <div id="chart"></div>
         <div id="x-axis-label" class="x-axis-label"></div>
     </div>
-
+    
+    
+    
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
     <script src="host_cities.js"></script>
     <script src="host_line_chart.js"></script>
-    <script src="atletes_line_chart_age.js"></script>
+    <script src="athletes_line_chart.js"></script>
 </body>
 </html>
