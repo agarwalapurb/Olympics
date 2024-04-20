@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -318,4 +318,10 @@ select {
 /* Style for season label when season is toggled */
 .season-toggleb input:checked + .toggle-labelb + #season-labelb {
     color: #2196F3; /* Change color when toggled */
+}
+
+.legend-container {
+    width: 100%;
+    height: 100px; /* Adjust the height as needed */
+    margin-top: 20px; /* Adjust the margin as needed */
 }

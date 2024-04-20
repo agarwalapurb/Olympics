@@ -99,6 +99,10 @@ d3.csv("archive/athlete_events.csv").then(function (data) {
     // Filter out NaN values for the selected demographic
     filteredData = filterNaNValues(filteredData, selectedDemographic);
 
+
+	// Filter data to include only athletes who have won a medal
+	filteredData = filteredData.filter((d) => d.Medal !== "NA");
+
     // Clear previous chart
     d3.select("#chartb").selectAll("*").remove();
 
@@ -180,61 +184,136 @@ d3.csv("archive/athlete_events.csv").then(function (data) {
 
     svg.append("g").attr("class", "y-axis").call(yAxis);
 
-    // Create bubbles
-    var circles = svg
-      .selectAll("circle")
-      .data(medalCounts)
-      .enter()
-      .append("circle")
-      .attr("cx", (d) => {
-        if (selectedDemographic === "Sex") {
-          // Assign x-coordinates for "M" and "F"
-          return xScale(d.key) + xScale.bandwidth() / 2;
-        } else {
-          return xScale(d.key);
-        }
-      })
-      .attr("cy", (d) => yScale(d.value))
-      .attr("r", (d) => radiusScale(d.value))
-      .style("fill", "steelblue");
+// Define color scale
+var colorScale = d3.scaleSequential(d3.interpolateViridis)
+  .domain([0, d3.max(medalCounts, (d) => d.value)]);
 
-    // Add tooltip
-    circles.append("title").text((d) => {
-      if (selectedDemographic === "Sex") {
-        return "Category: " + d.key + "\nNumber of Medals: " + d.value;
-      } else {
-        // Calculate the true range for the demographic
-        var trueRange =
+
+
+// Create bubbles
+var circles = svg
+  .selectAll("circle")
+  .data(medalCounts)
+  .enter()
+  .append("circle")
+  .attr("cx", (d) => {
+    if (selectedDemographic === "Sex") {
+      // Assign x-coordinates for "M" and "F"
+      return xScale(d.key) + xScale.bandwidth() / 2;
+    } else {
+      return xScale(d.key);
+    }
+  })
+  .attr("cy", (d) => yScale(d.value))
+  .attr("r", (d) => radiusScale(d.value))
+  .style("fill", (d) => colorScale(d.value));
+
+// Create a div for the tooltip
+var tooltip = d3.select("body").append("div")
+  .attr("class", "tooltip")
+  .style("opacity", 0);
+
+// Show tooltip on hover
+circles.on("mouseover", function (event, d) {
+  var tooltipContent =
+    selectedDemographic === "Sex"
+      ? selectedDemographic + ": " + d.key + "<br>Number of Medals: " + d.value
+      : selectedDemographic + ": " +
           d.key * getGroupSize(selectedDemographic) +
           "-" +
-          (d.key + 1) * getGroupSize(selectedDemographic);
-        return "Category: " + trueRange + "\nNumber of Medals: " + d.value;
-      }
-    });
+          (d.key + 1) * getGroupSize(selectedDemographic) +
+          "<br>Number of Medals: " +
+          d.value;
 
-    // Show tooltip on hover
-    circles.on("mouseover", function (d) {
-      var tooltip = d3.select("#tooltip");
-      tooltip
-        .style("opacity", 1)
-        .html(
-          selectedDemographic === "Sex"
-            ? "Category: " + d.key + "<br>Number of Medals: " + d.value
-            : "Category: " +
-                d.key * getGroupSize(selectedDemographic) +
-                "-" +
-                (d.key + 1) * getGroupSize(selectedDemographic) +
-                "<br>Number of Medals: " +
-                d.value
-        );
-    });
+  // Update tooltip content and position
+  tooltip.html(tooltipContent)
+    .style("left", event.pageX + 10 + "px")
+    .style("top", event.pageY - 20 + "px")
+    .transition()
+    .duration(0)
+    .style("opacity", 0.9);
+});
 
-    // Hide tooltip on mouseout
-    circles.on("mouseout", function () {
-      var tooltip = d3.select("#tooltip");
-      tooltip.style("opacity", 0);
-    });
+// Hide tooltip on mouseout
+circles.on("mouseout", function () {
+  tooltip.transition()
+    .duration(200)
+    .style("opacity", 0);
+});
 
+// Function to create color legend
+function createColorLegend(colorScale, svg) {
+	var legendWidth = 200;
+	var legendHeight = 20;
+	var legend = svg
+	  .append("g")
+	  .attr("class", "legend")
+	  .attr("transform", "translate(320, -25)");
+  
+	var legendTitle = legend
+	  .append("text")
+	  .attr("x", 0)
+	  .attr("y", -10)
+	  .text("Medal Count");
+  
+	var defs = legend.append("defs");
+  
+	var linearGradient = defs
+	  .append("linearGradient")
+	  .attr("id", "linear-gradient");
+  
+	// Define the gradient stops
+	linearGradient
+	  .selectAll("stop")
+	  .data(colorScale.ticks().map((t, i, n) => ({
+		offset: `${100 * i / n.length}%`,
+		color: colorScale(t)
+	  })))
+	  .enter()
+	  .append("stop")
+	  .attr("offset", d => d.offset)
+	  .attr("stop-color", d => d.color);
+  
+	// Append the rectangle to the legend
+	legend
+	  .append("rect")
+	  .attr("width", legendWidth)
+	  .attr("height", legendHeight)
+	  .style("fill", "url(#linear-gradient)");
+  
+	// Define legend scale
+	var legendScale = d3
+	  .scaleLinear()
+	  .range([0, legendWidth])
+	  .domain(colorScale.domain());
+  
+	// Create axis
+	var legendAxis = d3.axisBottom(legendScale)
+	  .tickValues(colorScale.domain())
+	  .tickFormat(d3.format("d"));
+  
+	// Append the legend axis
+	legend
+	  .append("g")
+	  .attr("class", "legend-axis")
+	  .attr("transform", "translate(0," + legendHeight + ")")
+	  .call(legendAxis);
+
+	 // Append label below the legend
+	 legend
+	 .append("text")
+	 .attr("class", "legend-label")
+	 .attr("x", legendWidth / 2)
+	 .attr("y", legendHeight + 15) // Adjust this value for spacing
+	 .attr("text-anchor", "middle")
+	 .attr("font-size", "12px") 
+	 .text("Medal Count");
+  }
+  
+  // Call createColorLegend after creating the bubble map chart
+  createColorLegend(colorScale, svg);
+  
+  
     // Add labels
     svg
       .append("text")
