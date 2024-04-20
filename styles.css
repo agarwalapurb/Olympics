@@ -170,8 +170,19 @@ select {
     align-items: center;
     margin: 20px 0;
 }
+  .season-toggle-containerb {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
 
 .season-toggle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+.season-toggleb {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -183,8 +194,25 @@ select {
     width: 0;
     height: 0;
 }
+.season-toggleb input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
 .toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.toggle-labelb {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -209,16 +237,39 @@ select {
     -webkit-transition: .4s;
     transition: .4s;
 }
+.toggle-labelb:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
 .season-toggle input:checked + .toggle-label {
+    background-color: #2196F3;
+}
+.season-toggleb input:checked + .toggle-labelb {
     background-color: #2196F3;
 }
 
 .season-toggle input:focus + .toggle-label {
     box-shadow: 0 0 1px #2196F3;
 }
+.season-toggleb input:focus + .toggle-labelb {
+    box-shadow: 0 0 1px #2196F3;
+}
 
 .season-toggle input:checked + .toggle-label:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+.season-toggleb input:checked + .toggle-labelb:before {
     -webkit-transform: translateX(10px);
     -ms-transform: translateX(10px);
     transform: translateX(10px);
@@ -228,8 +279,14 @@ select {
 .season-toggle .toggle-label {
     border-radius: 20px;
 }
+.season-toggleb .toggle-labelb {
+    border-radius: 20px;
+}
 
 .season-toggle .toggle-label:before {
+    border-radius: 50%;
+}
+.season-toggleb .toggle-labelb:before {
     border-radius: 50%;
 }
 
@@ -243,7 +300,22 @@ select {
     top: -18px; /* Adjust vertical position */
 }
 
+/* Style for season label */
+#season-labelb {
+    margin-left:40px;
+    font-weight: bold;
+    color: #666; /* Default color */
+    transition: color 0.3s ease; /* Smooth color transition */
+    position: relative;
+    top: -18px; /* Adjust vertical position */
+}
+
 /* Style for season label when season is toggled */
 .season-toggle input:checked + .toggle-label + #season-label {
+    color: #2196F3; /* Change color when toggled */
+}
+
+/* Style for season label when season is toggled */
+.season-toggleb input:checked + .toggle-labelb + #season-labelb {
     color: #2196F3; /* Change color when toggled */
 }
