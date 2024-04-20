@@ -11,14 +11,7 @@
     <h2>Host Cities</h2>
     <div id="host_map"></div>
     
-    <div class="season-toggle-container">
-        <label for="season-toggle">Season:</label>
-        <div class="season-toggle">
-            <input type="checkbox" id="season-toggle">
-            <label for="season-toggle" class="toggle-label"></label>
-            <span id="season-label">Summer</span>
-        </div>
-    </div>
+    
     <!-- <h2>Performance over Time</h2> -->
     <!-- <div id="host_line_chart"></div> -->
     <div class="container">
@@ -36,7 +29,36 @@
         <div id="x-axis-label" class="x-axis-label"></div>
     </div>
     
-    
+
+    <div class="season-toggle-container">
+        <label for="season-toggle">Season:</label>
+        <div class="season-toggle">
+            <input type="checkbox" id="season-toggle">
+            <label for="season-toggle" class="toggle-label"></label>
+            <span id="season-label">Summer</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Medals Data Visualization</h1>
+        <div>
+            <label for="sport">Select Sport:</label>
+            <select id="sport">
+                <!-- Populate options dynamically from the dataset -->
+            </select>
+            <br>
+            <label for="demographicb">Select Demographic:</label>
+            <select id="demographicb">
+                <option value="Age">Age</option>
+                <option value="Sex">Sex</option>
+                <option value="Height">Height</option>
+                <option value="Weight">Weight</option>
+            </select>
+        </div>
+        <div id="chartb"></div>
+        <div id="x-axis-labelb" class="x-axis-label"></div>
+    </div>
+
     
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -44,5 +66,6 @@
     <script src="host_cities.js"></script>
     <script src="host_line_chart.js"></script>
     <script src="athletes_line_chart.js"></script>
+    <script src="athletes_sports_bubble_map.js"></script>
 </body>
 </html>
