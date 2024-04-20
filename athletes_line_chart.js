@@ -113,7 +113,7 @@ d3.csv("archive/athlete_events.csv")
       const colorScale = d3
         .scaleLinear()
         .domain([0, d3.max(counts, (d) => d.count)])
-        .range(["#ffcccc", "#ff6666"]); // lighter to darker red gradient
+        .range(["#ff8888", "#ff6666"]); // lighter to darker red gradient
 
       // Define scales
       const x = d3.scaleBand().domain(ranges).range([0, width]).padding(0.1);
