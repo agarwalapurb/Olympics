@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css">
     <link rel="stylesheet" href="custom_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
     <h1>Host Cities and their performance over time</h1>
@@ -155,8 +156,11 @@
     </div>
 
      <!-- bubbleMap -->
+     <div class="container">
      <div id="viz_container" >
+        <h1>Total Medals won by each country</h1>
         <div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
+            <label for="season-select">Season:</label>
             <select id="season-select">
                 <option value="summer">Summer</option>
                 <option value="winter">Winter</option>
@@ -165,6 +169,25 @@
         
         <div class="tooltip1" style="display: none;"></div>
     </div>  
+    </div>
+        <!-- progression in sports  -->
+<div class ="container">
+    <label for="progression-select">Progression:</label>
+    <select id="progression-select">
+        <option value="100m">100m Race</option>
+        <option value="highJump">High Jump</option>
+        <option value="longJump">Long Jump</option>
+    </select>
+    <label for="gender-select">Gender:</label>
+    <select id="gender-select">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+</div>
+
+
+    <!-- Tooltip div -->
+    <div class="tooltip2" style="display: none;"></div>
     
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -183,6 +206,6 @@
     <script src="sports_stacked_bar_chart.js"></script>
     <script src="performace_winter_summer.js"></script>
     <script src="bubbleMap.js"></script>
-
+    <script src="athlete_records.js"></script>
 </body>
 </html>

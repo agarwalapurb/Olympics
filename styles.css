@@ -24,6 +24,14 @@ h1 {
 .city-marker:hover {
     opacity: 1;
 }
+.tooltip2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
 
 .tooltip1{
     position: absolute;
