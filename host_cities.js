@@ -357,11 +357,18 @@ function makeHostCitiesMap(season) {
     });
 }
 
-document.getElementById("season-toggle").addEventListener("change", function() {
+document.getElementById("season-togglea").addEventListener("change", function() {
     // Get the current season selection
     const season = this.checked ? "Winter" : "Summer";
     // Call makeHostCitiesMap function with the selected season
     makeHostCitiesMap(season);
+
+    // Update the sport display based on the selected season
+  if (season === 'Winter') {
+    $('#season-labela').text('Winter');
+} else {
+    $('#season-labela').text('Summer');
+}
 });
 
 makeHostCitiesMap("Summer");
