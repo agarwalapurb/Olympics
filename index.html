@@ -86,7 +86,60 @@
         </div>
     </div>
 
-    
+    <!-- your daddy's div -->
+    <div id="scatter-container" class="economycontainer" style="all: initial; background-color: #fff; text-align: center; width: 100%; height: 750px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h2 style="color: black;">Effect of country economics on medals</h2>
+        <div id="scatterplot" style="width: 90%; height: 500px; margin: 0 auto; border: 1px solid black;"></div>
+        <div id="tooltip" style="position: absolute; opacity: 0; background-color: #fff; border: 1px solid #000; padding: 5px;"></div>
+      
+        <div style="width: 90%; margin: 0 auto; padding: 10px 0;">
+        <label for="medal-type" style="font-weight: bold;">Select Medal Type:</label>
+        <select id="medal-type" style="width: 150px; padding: 5px; margin-right: 20px;">
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Bronze">Bronze</option>
+            <option value="total_count">Total</option>
+        </select>
+        
+        <label for="economy-variable" style="font-weight: bold;">Select Economy Variable:</label>
+        <select id="economy-variable" style="width: 150px; padding: 5px;">
+            <option value="GDP">GDP</option>
+            <option value="gini">GINI</option>
+            <option value="gni">GNI</option>
+            <option value="unemployment">Unemployment</option>
+            <option value="literacy">Literacy</option>
+        </select>
+        </div>
+          
+      
+        <div style="width: 90%; margin: 0 auto;">
+            <label for="year-slider" style="font-weight: bold;">Select Year:</label>
+            <br>
+            <div style="position: relative;">
+              <input type="range" id="year-slider" min="minYear" max="maxYear" value="minYear" step="stepvalue" style="width: 100%;">
+              <div id="year-labels" style="position: absolute; bottom: -20px; left: 0; width: 100%; display: flex; justify-content: space-between; font-size: 12px;"></div>
+              <style>
+                #year-labels {
+                  display: flex;
+                  justify-content: space-between;
+                  width: 100%;
+                }
+              
+                #year-labels span {
+                    transform: rotate(-45deg);
+                    transform-origin: center bottom;
+                }
+                
+            </style>
+            </div>
+            <br>
+            <div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
+              <div style="border: 1px solid black; padding: 5px;">Selected Year: <span id="selected-year">minYear</span></div>
+            </div>
+          </div>
+          
+          
+    </div>
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
@@ -94,5 +147,7 @@
     <script src="host_line_chart.js"></script>
     <script src="athletes_line_chart.js"></script>
     <script src="athletes_sports_bubble_map.js"></script>
+    <script src="medaleconomyjs/economy.js"></script>
+    <script src="medaleconomyjs/year_slider_economy.js"></script>
 </body>
 </html>
