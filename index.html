@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seeing through the Rings : Unveiling Olympic History</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="custom_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
@@ -125,6 +127,28 @@
           
     </div>
 
+    <div class="container1">
+        <h1>Medal Winning Countries Distribution</h1>
+        <div>
+            <label for="sport1">Select Sport:</label>
+            <select id="sport1">
+            </select>
+        </div>
+        <div class = "year-slider-range">
+            <label for="year-range">Select Year Range:</label>
+            <span id="year-range-value">1896 - 2016</span>
+            <div class="slider-styled" id="year-range"></div>
+        </div>
+        <div id="toggle-container1">
+            <button id="summer-toggle1" class="toggle-button1 active">Summer</button>
+            <button id="winter-toggle1" class="toggle-button1">Winter</button>
+        </div>
+        <div id="chart1">
+            <svg width="800" height="400"></svg>
+        </div>
+        <div id="popup"></div>
+    </div>
+
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
     <script src="host_cities.js"></script>
@@ -133,5 +157,7 @@
     <script src="athletes_sports_bubble_map.js"></script>
     <script src="medaleconomyjs/economy.js"></script>
     <script src="medaleconomyjs/year_slider_economy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.js"></script>
+    <script src="sports_stacked_bar_chart.js"></script>
 </body>
 </html>
