@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="custom_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> 
 </head>
 <body>
     <h1>Host Cities and their performance over time</h1>
@@ -170,6 +172,12 @@
         <div class="tooltip1" style="display: none;"></div>
     </div>  
     </div>
+
+        <!-- Country-wise medal analysis over years  -->
+        <div id="map-container">
+            <h1>Country-wise medal analysis over years</h1>
+        </div>
+
         <!-- progression in sports  -->
 <div class ="container">
     <label for="progression-select">Progression:</label>
@@ -189,6 +197,10 @@
     <!-- Tooltip div -->
     <div class="tooltip2" style="display: none;"></div>
     
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script src="worldmap.js" defer></script>
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
