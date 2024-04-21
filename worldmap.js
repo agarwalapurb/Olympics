@@ -55,7 +55,7 @@
         // Define projection
         const projection = d3.geoMercator()
           .fitSize([containerWidth, containerHeight], countries)
-          .translate([containerWidth / 2, 2*containerHeight / 3])
+          .translate([containerWidth / 2, 62*containerHeight /100 ])
           .scale((containerWidth / 7)  );
 
         // Define path generator
