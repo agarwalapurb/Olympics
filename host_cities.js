@@ -156,8 +156,8 @@ const summerHostCities = [
 function createLineChart(country, season) {
     // Set the dimensions and margins of the graph
     const margin = { top: 20, right: 30, bottom: 50, left: 60 },
-        width = 600 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom;
+        width = 500 - margin.left - margin.right,
+        height = 300 - margin.top - margin.bottom;
 
     // Remove any existing SVG elements in the "#line-chart" div
     d3.select("#line-chart").selectAll("*").remove();
@@ -281,8 +281,8 @@ function makeHostCitiesMap(season) {
     }
 
     // Set up the SVG dimensions
-    const width = 900;
-    const height = 450;
+    const width = 700;
+    const height = 350;
 
     // Create the SVG element
     const svg = d3.select("#host_map")
@@ -372,3 +372,4 @@ document.getElementById("season-togglea").addEventListener("change", function() 
 });
 
 makeHostCitiesMap("Summer");
+createLineChart("United States", "Summer");
