@@ -71,6 +71,13 @@ h1 {
     color: #333;
 }
 
+h2 {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
 label {
     font-weight: bold;
     margin-right: 10px;
