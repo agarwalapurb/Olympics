@@ -285,9 +285,13 @@ function createScatterPlot(Data, medalData, selectedMedalType, selectedYear, eco
                     Silver: filteredEntry.Silver,
                     total_count: filteredEntry.total_count
                 };
+                        // Check if val is not 0 before pushing the merged entry into mergedData
+                if (Entry.val !== 0) {
+                    mergedData.push(mergedEntry);
+                }
 
                 // Push the merged entry into the mergedData array
-                mergedData.push(mergedEntry);
+                // mergedData.push(mergedEntry);
             }
         });
 
@@ -326,12 +330,6 @@ function createScatterPlot(Data, medalData, selectedMedalType, selectedYear, eco
             .range([height - margin.bottom, margin.top]);
 
         // console.log(d3.max(mergedData, d => +d.selectedMedalType))
-        // Define the tooltip element
-        // Create tooltip container
-        const tooltip = d3.select("body")
-                            .append("div")
-                            .attr("class", "tooltip")
-                            .style("opacity", 0);
         // Create circles for scatter plot
         svg.selectAll("circle")
             .data(mergedData)
