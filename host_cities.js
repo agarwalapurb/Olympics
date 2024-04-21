@@ -1,3 +1,70 @@
+function createLineChart(country) {
+    // Set the dimensions and margins of the graph
+    const margin = { top: 20, right: 30, bottom: 30, left: 60 },
+        width = 600 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    // Remove any existing SVG elements in the "#line-chart" div
+    d3.select("#line-chart").selectAll("*").remove();
+
+    // Append the SVG object to the div called "line-chart"    
+    const svg = d3.select("#line-chart")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    // Load CSV data
+    d3.csv("archive/summer_host_data.csv").then(function (data) {
+        // Extract data for the selected country
+        const countryData = data.map(d => ({ Year: +d.Games, Rank: +d[country] }));
+
+        // Filter out data points with rank 0 or NaN
+        const filteredData = countryData.filter(d => d.Rank > 0 && !isNaN(d.Rank));
+
+        // Get the maximum rank for the y-axis domain
+        const maxRank = d3.max(filteredData, d => d.Rank);
+
+        // X axis
+        const x = d3.scaleLinear()
+            .domain([1892, 2024]) // Fixed range from 1896 to 2020
+            .range([0, width]);
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x));
+
+        // Y axis
+        const y = d3.scaleLinear()
+            .domain([0, maxRank]) // Dynamic range based on the maximum rank
+            .range([height, 0]);
+        svg.append("g")
+            .call(d3.axisLeft(y));
+
+        // Add the lines
+        const line = d3.line()
+            .x(d => x(d.Year))
+            .y(d => y(d.Rank));
+
+        svg.append("path")
+            .datum(filteredData)
+            .attr("fill", "none")
+            .attr("stroke", "steelblue")
+            .attr("stroke-width", 2)
+            .attr("d", line);
+
+        // Add title
+        svg.append("text")
+            .attr("x", (width / 2))
+            .attr("y", 0)
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .html("<tspan style='font-weight:bold'>" + country + "</tspan>");
+    });
+}
+
+
+
 function makeHostCitiesMap() {
     // Define the data
     const hostCities = [
@@ -124,6 +191,11 @@ function makeHostCitiesMap() {
             .attr("cx", d => projection([d.longitude, d.latitude])[0])
             .attr("cy", d => projection([d.longitude, d.latitude])[1])
             .attr("r", 4)
+            .on("click", function(event, d) {
+                createLineChart(d.country);
+                console.log("hiiii");
+                console.log(d.country);
+            })
             .on("mouseover", (event, d) => {
                 // Display tooltip with message "HI"
                 tooltip.html(`<strong>${d.name}</strong><br>
