@@ -405,3 +405,16 @@ $('#sport').change(function() {
     var selectedSport = $(this).val();
     $('#selected-sport').text(selectedSport);
 });
+
+// Assuming you're using jQuery for simplicity
+$('#season-toggleb').change(function() {
+  var selectedSeason = $(this).prop('checked') ? 'Winter' : 'Summer';
+  $('#season-labelb').text(selectedSeason);
+
+  // Update the sport display based on the selected season
+  if (selectedSeason === 'Winter') {
+      $('#selected-sport').text('Alpine Skiing');
+  } else {
+      $('#selected-sport').text('Aeronautics');
+  }
+});
