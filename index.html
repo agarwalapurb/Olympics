@@ -153,10 +153,26 @@
         <h1>Performance in Winter and Summer Olympics</h1>
         <div id="performance_chart"></div>
     </div>
+
+     <!-- bubbleMap -->
+     <div id="viz_container" >
+        <div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
+            <select id="season-select">
+                <option value="summer">Summer</option>
+                <option value="winter">Winter</option>
+            </select>
+        </div>
+        
+        <div class="tooltip1" style="display: none;"></div>
+    </div>  
     
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo@"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo-projection@4"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="host_cities.js"></script>
     <script src="host_line_chart.js"></script>
     <script src="athletes_line_chart.js"></script>
@@ -166,5 +182,7 @@
     <script src="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.js"></script>
     <script src="sports_stacked_bar_chart.js"></script>
     <script src="performace_winter_summer.js"></script>
+    <script src="bubbleMap.js"></script>
+
 </body>
 </html>
