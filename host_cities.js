@@ -280,15 +280,21 @@ function makeHostCitiesMap(season) {
         color = "blue";
     }
 
+    createLineChart("United States", season);
+
     // Set up the SVG dimensions
-    const width = 700;
-    const height = 350;
+    const width = 800;
+    const height = 400;
 
     // Create the SVG element
     const svg = d3.select("#host_map")
         .append("svg")
         .attr("width", width)
         .attr("height", height);
+        // .call(d3.zoom().on("zoom", function () {
+        //     svg.attr("transform", d3.event.transform);
+        // }))
+        // .append("g");
 
     // Create tooltip container
     const tooltip = d3.select("body")
@@ -354,6 +360,16 @@ function makeHostCitiesMap(season) {
                     .duration(500)
                     .style("opacity", 0);
             });
+        
+        const zoom = d3.zoom()
+        .scaleExtent([1, 8])
+        .on("zoom", zoomed);
+
+        function zoomed(event) {
+            svg.attr("transform", event.transform);
+        }
+
+        svg.call(zoom);
     });
 }
 

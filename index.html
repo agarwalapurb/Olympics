@@ -8,40 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css">
     <link rel="stylesheet" href="custom_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <style>
-        /* Add custom styles here if needed */
-        #map-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
-        }
-
-        #map-container > div {
-            flex: 0 0 calc(50% - 20px); /* Adjusted width */
-        }
-
-        #map-container > div + div {
-            margin-left: 20px; /* Adjusted margin */
-        }
-
-
-        /* Add margin-top to push down the line chart */
-        #line-chart-container {
-            margin-top: 120px;
-            margin-left: 20px;
-        }
-
-        /* Align heading in the center of the page */
-        #heading-container {
-            text-align: center;
-            width: 100%; /* Ensure the container takes the full width */
-        }
-
-        
-
-        /* Additional styles from styles.css can be added here */
-    </style>
 </head>
 <body>
     <div class="container">
@@ -50,7 +16,7 @@
         </div>
         <div id="map-container">
             
-            <div>
+            <div >
                 <div class="season-toggle-containera">
                     <label for="season-togglea">Season:</label>
                     <div class="season-togglea">
@@ -61,7 +27,7 @@
                 </div>
                 <div id="host_map"></div>
             </div>
-            <div >
+            <div class="conatiner">
                 <div id="line-chart-container">
                     <div id="line-chart" class="line-chart"></div>
                 </div>
