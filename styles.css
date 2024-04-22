@@ -495,3 +495,28 @@ select {
     text-align: center;
     width: 100%; /* Ensure the container takes the full width */
 }
+
+#AthletesByCountriesButton {
+    background-color: cadetblue;
+    height: 30px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right : 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#nav_bar{
+    background-color: #2196F3;
+    width : 100%;
+    height : 60px;
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 10px;
+    font-size:40px;
+    font-family: Garamond, serif;
+    padding-top: 15px;
+    
+}

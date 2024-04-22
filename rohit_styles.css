@@ -1,0 +1,129 @@
+#chartContainer {
+    width: 70%;
+    height: 90%;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    position: absolute;
+    left: 1%;
+    top:35%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    
+}
+
+/* canvas {
+    min-width: 2000px; 
+} */
+
+
+.container {
+    background-color: whitesmoke;
+    width: 25%;
+    height: 70%;
+    position: absolute;
+    right: 10px;
+    top: 37%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .country-list {
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    overflow-y: scroll;
+    border: 1px solid #bab8b8;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .country-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1px;
+    padding-left: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .country-item:last-child {
+    border-bottom: none;
+  }
+  
+  .remove-btn {
+    background-color: #ff5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+  }
+
+  .year-list {
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 1%;
+    left: 33%;
+    overflow-y: scroll;
+    border: 1px solid #bab8b8;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .year-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1px;
+    padding-left: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .year-item:last-child {
+    border-bottom: none;
+  }
+  
+  .sport-list {
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 1%;
+    left: 66%;
+    overflow-y: scroll;
+    border: 1px solid #bab8b8;
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sport-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 1px;
+    padding-left: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .sport-item:last-child {
+    border-bottom: none;
+  }

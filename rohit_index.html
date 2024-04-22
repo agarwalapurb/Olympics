@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Example</title>
+    <link rel="stylesheet" href="rohit_styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div id="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+
+
+    <div class="container">
+        <form id="olympicsForm">
+          <div class="form-group">
+                <label for="yearDropdown">Select Year:</label>
+                <select id="yearDropdown" name="year"></select>
+                <button type="button" id="addYearBtn">Add</button>
+           </div>
+
+          <div class="form-group">
+            <label for="countryDropdown">Select Country:</label>
+            <select id="countryDropdown" name="country"></select>
+            <button type="button" id="addCountryBtn">Add</button>
+          </div>
+
+          <div class="form-group">
+            <label for="typeDropdown">Weather:</label>
+            <select id="typeDropdown" name="type"></select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="sportDropdown">Sport:</label>
+            <select id="sportDropdown" name="sport"></select>
+            <button type="button" id="addSportBtn">Add</button>
+          </div>
+
+          <div class="form-group">
+            <label for="chartDropdown">Plot :</label>
+            <select id="chartDropdown" name="type"></select>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="country-list" id="countryList">
+    <!-- Selected countries will be displayed here -->
+    </div>
+    <div class="year-list" id="yearList">
+        <!-- Selected countries will be displayed here -->
+    </div>
+
+    <div class="sport-list" id="sportList">
+        <!-- Selected countries will be displayed here -->
+    </div>
+
+    <script src="rohit_chart.js"></script>
+</body>
+</html>
+
