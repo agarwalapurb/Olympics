@@ -291,11 +291,32 @@ function makeHostCitiesMap(season) {
         .append("svg")
         .attr("width", width)
         .attr("height", height);
-        // .call(d3.zoom().on("zoom", function () {
-        //     svg.attr("transform", d3.event.transform);
-        // }))
-        // .append("g");
 
+
+    // svg.append("defs")
+    //     .append("linearGradient")
+    //     .attr("id", "ocean-gradient")
+    //     .attr("gradientUnits", "userSpaceOnUse")
+    //     .attr("x1", 0).attr("y1", 0)
+    //     .attr("x2", 0).attr("y2", height)
+    //     .selectAll("stop")
+    //     .data([
+    //         {offset: "0%", color: "#add8e6"}, // Light blue
+    //         {offset: "100%", color: "#87ceeb"} // Deep sky blue
+    //     ])
+    //     .enter().append("stop")
+    //     .attr("offset", d => d.offset)
+    //     .attr("stop-color", d => d.color);
+    
+    // svg.append("rect")
+    //     .attr("width", width)
+    //     .attr("height", height)
+    //     .style("fill", "url(#ocean-gradient)");
+
+    
+    
+    
+    
     // Create tooltip container
     const tooltip = d3.select("body")
         .append("div")
@@ -320,8 +341,9 @@ function makeHostCitiesMap(season) {
             .enter().append("path")
             .attr("class", "country")
             .attr("d", path)
-            .style("fill", "white")
+            .style("fill", "#e0e0e0")
             .style("stroke", "black");
+            
 
         // Plot host cities
         svg.selectAll(".city-marker")
