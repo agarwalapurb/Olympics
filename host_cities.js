@@ -217,7 +217,19 @@ function createLineChart(country, season) {
             .attr("fill", "none")
             .attr("stroke", color)
             .attr("stroke-width", 2)
-            .attr("d", line);
+            .attr("d", line)
+            .on("mouseover", function () {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 0.3); // Reduce opacity on mouseover
+            })
+            .on("mouseout", function () {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 1); // Restore opacity on mouseout
+            });
 
         // Add circles for each data point
         svg.selectAll(".dot")
@@ -235,11 +247,19 @@ function createLineChart(country, season) {
                 tooltip.html("Year: " + d.Year + "<br/>Rank: " + d.Rank)
                     .style("left", (event.pageX) + "px")
                     .style("top", (event.pageY - 28) + "px");
+                svg.select("path")
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 0.3);
             })
             .on("mouseout", function (d) {
                 tooltip.transition()
                     .duration(500)
                     .style("opacity", 0);
+                svg.select("path")
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 1);
             });
 
         // Add x-axis title
