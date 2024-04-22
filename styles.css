@@ -431,18 +431,18 @@ select {
     height: 100%;
 }
 
-#map-container {
+#hostmap-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-#map-container > div {
+#hostmap-container > div {
     flex: 0 0 calc(50% - 20px); /* Adjusted width */
 }
 
-#map-container > div + div {
+#hostmap-container > div + div {
     margin-left: 20px; /* Adjusted margin */
 }
 
