@@ -184,7 +184,7 @@ function createLineChart(country, season) {
     }
     d3.csv(file_name).then(function (data) {
         // Extract data for the selected country
-        const countryData = data.map(d => ({ Year: +d.Games, Rank: +d[country] }));
+        const countryData = data.map(d => ({ Year: +d.Games, Rank: +d[country], Host: d.Host === country }));
 
         // Filter out data points with rank 0 or NaN
         const filteredData = countryData.filter(d => d.Rank > 0 && !isNaN(d.Rank));
@@ -238,9 +238,13 @@ function createLineChart(country, season) {
             .attr("class", "dot")
             .attr("cx", d => x(d.Year))
             .attr("cy", d => y(d.Rank))
-            .attr("r", 5)
-            .attr("fill", color) // Set color of scatter plot points
+            .attr("r", d => d.Host ? 7 : 5)
+            .attr("fill", d => d.Host ? "black" : color) // Set color of scatter plot points
             .on("mouseover", function (event, d) {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 0.3);
                 tooltip.transition()
                     .duration(200)
                     .style("opacity", .9);
@@ -253,6 +257,10 @@ function createLineChart(country, season) {
                     .attr("opacity", 0.3);
             })
             .on("mouseout", function (d) {
+                d3.select(this)
+                    .transition()
+                    .duration(200)
+                    .attr("opacity", 1);
                 tooltip.transition()
                     .duration(500)
                     .style("opacity", 0);
