@@ -212,7 +212,7 @@ var circles = svg
 	  var x, y;
 	  var safe = false;
 	  var count = 0;
-	  while (!safe && count < 1000) {
+	  while (!safe && count < 100000) {
 		count++;
 		x = Math.random() * 4 * innerWidth / 5 + innerWidth / 10;
 		y = Math.random() * 4 * innerHeight / 5 + innerHeight / 10;

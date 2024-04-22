@@ -6,6 +6,7 @@ async function populateSportsDropdown(selectedSeason) {
     const sportsDropdown = document.getElementById("sport1");
     const sports = Array.from(new Set(data.filter(d => d.Season === selectedSeason).map(d => d.Sport)));
 
+    sports.sort();
     // Clear existing options
     sportsDropdown.innerHTML = "";
 
