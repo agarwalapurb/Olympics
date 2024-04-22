@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.css">
     <link rel="stylesheet" href="custom_styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> 
 </head>
 <body>
     <div class="container">
@@ -175,13 +178,61 @@
     </div>
     
     <div class="container">
-        <h1>Performance in Winter and Summer Olympics</h1>
+        <h1>Performance in Summer and Winter Olympics</h1>
         <div id="performance_chart"></div>
     </div>
+
+     <!-- bubbleMap -->
+     <div class="container">
+     <div id="viz_container" >
+        <h1>Total Medals won by each country</h1>
+        <div style="display: flex; justify-content: center; width: 100%; margin-top: 15px;">
+            <label for="season-select">Season:</label>
+            <select id="season-select">
+                <option value="summer">Summer</option>
+                <option value="winter">Winter</option>
+            </select>
+        </div>
+        
+        <div class="tooltip1" style="display: none;"></div>
+    </div>  
+    </div>
+
+        <!-- Country-wise medal analysis over years  -->
+        <div id="map-container">
+            <h1>Country-wise medal analysis over years</h1>
+        </div>
+
+        <!-- progression in sports  -->
+<div class ="container">
+    <label for="progression-select">Progression:</label>
+    <select id="progression-select">
+        <option value="100m">100m Race</option>
+        <option value="highJump">High Jump</option>
+        <option value="longJump">Long Jump</option>
+    </select>
+    <label for="gender-select">Gender:</label>
+    <select id="gender-select">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+</div>
+
+
+    <!-- Tooltip div -->
+    <div class="tooltip2" style="display: none;"></div>
     
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script src="worldmap.js" defer></script>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo@"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo-projection@4"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="host_cities.js"></script>
     <script src="host_line_chart.js"></script>
     <script src="athletes_line_chart.js"></script>
@@ -191,5 +242,7 @@
     <script src="https://cdn.jsdelivr.net/npm/nouislider@14.7.0/distribute/nouislider.min.js"></script>
     <script src="sports_stacked_bar_chart.js"></script>
     <script src="performace_winter_summer.js"></script>
+    <script src="bubbleMap.js"></script>
+    <script src="athlete_records.js"></script>
 </body>
 </html>

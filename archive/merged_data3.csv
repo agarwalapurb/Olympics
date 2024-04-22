@@ -1,0 +1,1246 @@
+alpha-3,Year,GoldCount,SilverCount,BronzeCount,name,country-code
+AFG,2008,0,0,1,Afghanistan,004
+AFG,2012,0,0,1,Afghanistan,004
+ALB,,,,,Albania,008
+ATA,,,,,Antarctica,010
+ALG,1984,0,0,2,Algeria,012
+ALG,1992,1,0,1,Algeria,012
+ALG,1996,2,0,1,Algeria,012
+ALG,2000,1,1,3,Algeria,012
+ALG,2008,0,1,1,Algeria,012
+ALG,2012,1,0,0,Algeria,012
+DZA,,,,,Algeria,012
+ASM,,,,,American Samoa,016
+AND,,,,,Andorra,020
+AGO,,,,,Angola,024
+ATG,,,,,Antigua and Barbuda,028
+AZE,1996,0,1,0,Azerbaijan,031
+AZE,2000,2,0,1,Azerbaijan,031
+AZE,2004,1,0,4,Azerbaijan,031
+AZE,2008,1,2,4,Azerbaijan,031
+AZE,2012,2,2,6,Azerbaijan,031
+ARG,1924,1,3,2,Argentina,032
+ARG,1928,3,3,1,Argentina,032
+ARG,1932,3,1,0,Argentina,032
+ARG,1936,2,2,3,Argentina,032
+ARG,1948,3,3,1,Argentina,032
+ARG,1952,1,2,2,Argentina,032
+ARG,1956,0,1,1,Argentina,032
+ARG,1960,0,1,1,Argentina,032
+ARG,1964,0,1,0,Argentina,032
+ARG,1968,0,0,2,Argentina,032
+ARG,1972,0,1,0,Argentina,032
+ARG,1988,0,1,1,Argentina,032
+ARG,1992,0,0,1,Argentina,032
+ARG,1996,0,2,1,Argentina,032
+ARG,2000,0,2,2,Argentina,032
+ARG,2004,2,0,4,Argentina,032
+ARG,2008,2,0,4,Argentina,032
+ARG,2012,1,1,2,Argentina,032
+AUS,1896,2,0,0,Australia,036
+AUS,1900,2,0,3,Australia,036
+AUS,1920,0,2,1,Australia,036
+AUS,1924,3,1,2,Australia,036
+AUS,1928,1,2,1,Australia,036
+AUS,1932,3,1,1,Australia,036
+AUS,1936,0,0,1,Australia,036
+AUS,1948,2,6,5,Australia,036
+AUS,1952,6,2,3,Australia,036
+AUS,1956,13,8,14,Australia,036
+AUS,1960,8,8,6,Australia,036
+AUS,1964,6,2,10,Australia,036
+AUS,1968,5,7,5,Australia,036
+AUS,1972,8,7,2,Australia,036
+AUS,1976,0,1,4,Australia,036
+AUS,1980,2,2,5,Australia,036
+AUS,1984,4,8,12,Australia,036
+AUS,1988,3,6,5,Australia,036
+AUS,1992,8,9,11,Australia,036
+AUS,1996,10,9,23,Australia,036
+AUS,2000,16,25,17,Australia,036
+AUS,2004,17,16,16,Australia,036
+AUS,2008,14,16,17,Australia,036
+AUS,2012,8,15,12,Australia,036
+AUT,1896,2,1,2,Austria,040
+AUT,1900,0,3,3,Austria,040
+AUT,1904,0,0,1,Austria,040
+AUT,1908,0,0,1,Austria,040
+AUT,1912,0,2,2,Austria,040
+AUT,1924,0,3,1,Austria,040
+AUT,1928,2,0,1,Austria,040
+AUT,1932,1,1,3,Austria,040
+AUT,1936,4,6,3,Austria,040
+AUT,1948,1,0,3,Austria,040
+AUT,1952,0,1,1,Austria,040
+AUT,1956,0,0,2,Austria,040
+AUT,1960,1,1,0,Austria,040
+AUT,1968,0,2,2,Austria,040
+AUT,1972,0,1,2,Austria,040
+AUT,1976,0,0,1,Austria,040
+AUT,1980,1,2,1,Austria,040
+AUT,1984,1,1,1,Austria,040
+AUT,1988,1,0,0,Austria,040
+AUT,1992,0,2,0,Austria,040
+AUT,1996,0,1,2,Austria,040
+AUT,2000,2,1,0,Austria,040
+AUT,2004,2,4,1,Austria,040
+AUT,2008,0,1,2,Austria,040
+BAH,1956,0,0,1,Bahamas,044
+BAH,1964,1,0,0,Bahamas,044
+BAH,1992,0,0,1,Bahamas,044
+BAH,1996,0,1,0,Bahamas,044
+BAH,2000,2,0,0,Bahamas,044
+BAH,2004,1,0,1,Bahamas,044
+BAH,2008,0,1,1,Bahamas,044
+BAH,2012,1,0,0,Bahamas,044
+BHS,,,,,Bahamas,044
+BHR,,,,,Bahrain,048
+BGD,,,,,Bangladesh,050
+ARM,1996,1,1,0,Armenia,051
+ARM,2000,0,0,1,Armenia,051
+ARM,2008,0,0,6,Armenia,051
+ARM,2012,0,1,1,Armenia,051
+BRB,,,,,Barbados,052
+BEL,1900,5,5,5,Belgium,056
+BEL,1908,1,5,2,Belgium,056
+BEL,1912,2,1,3,Belgium,056
+BEL,1920,14,11,11,Belgium,056
+BEL,1924,3,7,3,Belgium,056
+BEL,1928,0,1,2,Belgium,056
+BEL,1936,0,0,2,Belgium,056
+BEL,1948,2,2,3,Belgium,056
+BEL,1952,2,2,0,Belgium,056
+BEL,1956,0,2,0,Belgium,056
+BEL,1960,0,2,2,Belgium,056
+BEL,1964,2,0,1,Belgium,056
+BEL,1968,0,1,1,Belgium,056
+BEL,1972,0,2,0,Belgium,056
+BEL,1976,0,3,3,Belgium,056
+BEL,1980,1,0,0,Belgium,056
+BEL,1984,1,1,2,Belgium,056
+BEL,1988,0,0,2,Belgium,056
+BEL,1992,0,1,2,Belgium,056
+BEL,1996,2,2,2,Belgium,056
+BEL,2000,0,2,3,Belgium,056
+BEL,2004,1,0,2,Belgium,056
+BEL,2008,1,1,0,Belgium,056
+BEL,2012,0,1,2,Belgium,056
+BMU,,,,,Bermuda,060
+BTN,,,,,Bhutan,064
+BOL,,,,,Bolivia (Plurinational State of),068
+BIH,,,,,Bosnia and Herzegovina,070
+BWA,,,,,Botswana,072
+BVT,,,,,Bouvet Island,074
+BRA,1920,1,1,1,Brazil,076
+BRA,1948,0,0,1,Brazil,076
+BRA,1952,1,0,2,Brazil,076
+BRA,1956,1,0,0,Brazil,076
+BRA,1960,0,0,2,Brazil,076
+BRA,1964,0,0,1,Brazil,076
+BRA,1968,0,1,2,Brazil,076
+BRA,1972,0,0,2,Brazil,076
+BRA,1976,0,0,2,Brazil,076
+BRA,1980,2,0,2,Brazil,076
+BRA,1984,1,5,2,Brazil,076
+BRA,1988,1,2,3,Brazil,076
+BRA,1992,2,1,0,Brazil,076
+BRA,1996,3,3,9,Brazil,076
+BRA,2000,0,6,6,Brazil,076
+BRA,2004,5,2,3,Brazil,076
+BRA,2008,3,4,8,Brazil,076
+BRA,2012,3,5,9,Brazil,076
+BLZ,,,,,Belize,084
+IOT,,,,,British Indian Ocean Territory,086
+SLB,,,,,Solomon Islands,090
+VGB,,,,,Virgin Islands (British),092
+BRN,2012,0,0,1,Brunei Darussalam,096
+BGR,,,,,Bulgaria,100
+BUL,1952,0,0,1,Bulgaria,100
+BUL,1956,1,3,1,Bulgaria,100
+BUL,1960,1,3,3,Bulgaria,100
+BUL,1964,3,5,2,Bulgaria,100
+BUL,1968,2,4,3,Bulgaria,100
+BUL,1972,6,10,5,Bulgaria,100
+BUL,1976,6,9,7,Bulgaria,100
+BUL,1980,8,16,17,Bulgaria,100
+BUL,1988,10,12,13,Bulgaria,100
+BUL,1992,3,7,6,Bulgaria,100
+BUL,1996,3,7,5,Bulgaria,100
+BUL,2000,5,6,2,Bulgaria,100
+BUL,2004,2,1,9,Bulgaria,100
+BUL,2008,1,1,3,Bulgaria,100
+BUL,2012,0,1,1,Bulgaria,100
+MMR,,,,,Myanmar,104
+BDI,1996,1,0,0,Burundi,108
+BLR,1996,1,6,8,Belarus,112
+BLR,2000,3,3,11,Belarus,112
+BLR,2004,2,6,7,Belarus,112
+BLR,2008,4,5,10,Belarus,112
+BLR,2012,3,5,3,Belarus,112
+KHM,,,,,Cambodia,116
+CMR,1968,0,1,0,Cameroon,120
+CMR,1984,0,0,1,Cameroon,120
+CMR,2000,1,0,0,Cameroon,120
+CMR,2004,1,0,0,Cameroon,120
+CMR,2008,1,0,0,Cameroon,120
+CMR,2012,0,0,1,Cameroon,120
+CAN,1900,1,0,1,Canada,124
+CAN,1904,4,1,0,Canada,124
+CAN,1908,3,3,9,Canada,124
+CAN,1912,3,2,3,Canada,124
+CAN,1920,3,3,3,Canada,124
+CAN,1924,0,3,1,Canada,124
+CAN,1928,4,4,7,Canada,124
+CAN,1932,2,5,8,Canada,124
+CAN,1936,1,3,5,Canada,124
+CAN,1948,0,1,2,Canada,124
+CAN,1952,1,2,0,Canada,124
+CAN,1956,2,1,3,Canada,124
+CAN,1960,0,1,0,Canada,124
+CAN,1964,1,2,1,Canada,124
+CAN,1968,1,3,1,Canada,124
+CAN,1972,0,2,3,Canada,124
+CAN,1976,0,5,6,Canada,124
+CAN,1984,10,18,16,Canada,124
+CAN,1988,3,2,6,Canada,124
+CAN,1992,7,4,7,Canada,124
+CAN,1996,3,11,8,Canada,124
+CAN,2000,3,3,8,Canada,124
+CAN,2004,3,6,3,Canada,124
+CAN,2008,3,10,6,Canada,124
+CAN,2012,1,5,12,Canada,124
+CPV,,,,,Cabo Verde,132
+CYM,,,,,Cayman Islands,136
+CAF,,,,,Central African Republic,140
+LKA,,,,,Sri Lanka,144
+SRI,1948,0,1,0,Sri Lanka,144
+SRI,2000,0,1,0,Sri Lanka,144
+TCD,,,,,Chad,148
+CHI,1928,0,1,0,chile,152
+CHI,1952,0,2,0,chile,152
+CHI,1956,0,2,2,chile,152
+CHI,1988,0,1,0,chile,152
+CHI,2000,0,0,1,chile,152
+CHI,2004,2,0,1,chile,152
+CHI,2008,0,1,0,chile,152
+CHL,,,,,Chile,152
+CHN,1984,15,8,9,China,156
+CHN,1988,5,11,12,China,156
+CHN,1992,16,22,15,China,156
+CHN,1996,16,22,12,China,156
+CHN,2000,28,16,14,China,156
+CHN,2004,32,17,14,China,156
+CHN,2008,51,21,28,China,156
+CHN,2012,37,32,22,China,156
+TWN,,,,,"Taiwan, Province of China",158
+CXR,,,,,Christmas Island,162
+CCK,,,,,Cocos (Keeling) Islands,166
+COL,1972,0,1,2,Colombia,170
+COL,1984,0,1,0,Colombia,170
+COL,1988,0,0,1,Colombia,170
+COL,1992,0,0,1,Colombia,170
+COL,2000,1,0,0,Colombia,170
+COL,2004,0,0,2,Colombia,170
+COL,2008,0,1,1,Colombia,170
+COL,2012,1,3,4,Colombia,170
+COM,,,,,Comoros,174
+MYT,,,,,Mayotte,175
+COG,,,,,Congo,178
+COD,,,,,"Congo, Democratic Republic of the",180
+COK,,,,,Cook Islands,184
+CRI,,,,,Costa Rica,188
+CRO,1992,0,1,2,Costa Rica,188
+CRO,1996,1,1,0,Costa Rica,188
+CRO,2000,1,0,1,Costa Rica,188
+CRO,2004,1,2,2,Costa Rica,188
+CRO,2008,0,2,3,Costa Rica,188
+CRO,2012,3,1,2,Costa Rica,188
+HRV,,,,,Croatia,191
+CUB,1900,1,1,0,Cuba,192
+CUB,1904,4,2,3,Cuba,192
+CUB,1948,0,1,0,Cuba,192
+CUB,1964,0,1,0,Cuba,192
+CUB,1968,0,4,0,Cuba,192
+CUB,1972,3,1,4,Cuba,192
+CUB,1976,6,4,3,Cuba,192
+CUB,1980,8,7,5,Cuba,192
+CUB,1992,14,6,11,Cuba,192
+CUB,1996,9,8,8,Cuba,192
+CUB,2000,11,11,7,Cuba,192
+CUB,2004,9,7,11,Cuba,192
+CUB,2008,2,11,11,Cuba,192
+CUB,2012,5,3,7,Cuba,192
+CYP,2012,0,1,0,Cyprus,196
+CZE,1996,4,3,4,Czechia,203
+CZE,2000,2,3,3,Czechia,203
+CZE,2004,1,3,4,Czechia,203
+CZE,2008,3,3,0,Czechia,203
+CZE,2012,4,3,4,Czechia,203
+BEN,,,,,Benin,204
+DEN,1896,1,2,3,denmark,208
+DEN,1900,1,3,2,denmark,208
+DEN,1908,0,2,3,denmark,208
+DEN,1912,1,6,5,denmark,208
+DEN,1920,3,9,1,denmark,208
+DEN,1924,2,5,2,denmark,208
+DEN,1928,3,1,3,denmark,208
+DEN,1932,0,3,3,denmark,208
+DEN,1936,0,2,3,denmark,208
+DEN,1948,5,7,8,denmark,208
+DEN,1952,2,1,3,denmark,208
+DEN,1956,1,2,1,denmark,208
+DEN,1960,2,3,1,denmark,208
+DEN,1964,2,1,3,denmark,208
+DEN,1968,1,4,3,denmark,208
+DEN,1972,1,0,0,denmark,208
+DEN,1976,1,0,2,denmark,208
+DEN,1980,2,1,2,denmark,208
+DEN,1984,0,3,3,denmark,208
+DEN,1988,2,1,1,denmark,208
+DEN,1992,1,1,4,denmark,208
+DEN,1996,4,1,1,denmark,208
+DEN,2000,2,3,1,denmark,208
+DEN,2004,2,0,7,denmark,208
+DEN,2008,2,2,4,denmark,208
+DEN,2012,2,4,4,denmark,208
+DNK,,,,,Denmark,208
+DMA,,,,,Dominica,212
+DOM,1984,0,0,1,Dominican Republic,214
+DOM,2004,1,0,0,Dominican Republic,214
+DOM,2008,1,1,0,Dominican Republic,214
+DOM,2012,1,1,0,Dominican Republic,214
+ECU,1996,1,0,0,Ecuador,218
+ECU,2008,0,1,0,Ecuador,218
+SLV,,,,,El Salvador,222
+GNQ,,,,,Equatorial Guinea,226
+ETH,1960,1,0,0,Ethiopia,231
+ETH,1964,1,0,0,Ethiopia,231
+ETH,1968,1,1,0,Ethiopia,231
+ETH,1972,0,0,2,Ethiopia,231
+ETH,1980,2,0,2,Ethiopia,231
+ETH,1992,1,0,2,Ethiopia,231
+ETH,1996,2,0,1,Ethiopia,231
+ETH,2000,4,1,3,Ethiopia,231
+ETH,2004,2,3,2,Ethiopia,231
+ETH,2008,4,1,2,Ethiopia,231
+ETH,2012,3,2,2,Ethiopia,231
+ERI,2004,0,0,1,Eritrea,232
+EST,1920,1,2,0,Estonia,233
+EST,1924,1,1,4,Estonia,233
+EST,1928,2,1,2,Estonia,233
+EST,1936,2,2,3,Estonia,233
+EST,1992,1,0,1,Estonia,233
+EST,2000,1,0,2,Estonia,233
+EST,2004,0,1,2,Estonia,233
+EST,2008,1,1,0,Estonia,233
+EST,2012,0,1,1,Estonia,233
+FRO,,,,,Faroe Islands,234
+FLK,,,,,Falkland Islands (Malvinas),238
+SGS,,,,,South Georgia and the South Sandwich Islands,239
+FJI,,,,,Fiji,242
+FIN,1908,1,1,3,Finland,246
+FIN,1912,9,8,9,Finland,246
+FIN,1920,16,10,9,Finland,246
+FIN,1924,14,13,10,Finland,246
+FIN,1928,8,8,9,Finland,246
+FIN,1932,5,8,12,Finland,246
+FIN,1936,7,6,6,Finland,246
+FIN,1948,6,7,5,Finland,246
+FIN,1952,6,3,13,Finland,246
+FIN,1956,3,1,11,Finland,246
+FIN,1960,1,1,3,Finland,246
+FIN,1964,3,0,2,Finland,246
+FIN,1968,1,2,1,Finland,246
+FIN,1972,3,1,4,Finland,246
+FIN,1976,4,2,0,Finland,246
+FIN,1980,3,1,4,Finland,246
+FIN,1984,4,2,6,Finland,246
+FIN,1988,1,1,2,Finland,246
+FIN,1992,1,2,2,Finland,246
+FIN,1996,1,2,1,Finland,246
+FIN,2000,2,1,1,Finland,246
+FIN,2004,0,2,0,Finland,246
+FIN,2008,1,1,2,Finland,246
+FIN,2012,0,2,1,Finland,246
+ALA,,,,,Åland Islands,248
+FRA,1896,5,4,2,France,250
+FRA,1900,24,36,27,France,250
+FRA,1908,5,5,9,France,250
+FRA,1912,7,4,4,France,250
+FRA,1920,10,19,13,France,250
+FRA,1924,13,14,10,France,250
+FRA,1928,7,9,5,France,250
+FRA,1932,10,5,4,France,250
+FRA,1936,7,6,6,France,250
+FRA,1948,10,6,13,France,250
+FRA,1952,6,6,6,France,250
+FRA,1956,4,4,6,France,250
+FRA,1960,0,2,3,France,250
+FRA,1964,1,9,6,France,250
+FRA,1968,7,4,5,France,250
+FRA,1972,2,4,7,France,250
+FRA,1976,2,3,4,France,250
+FRA,1980,6,5,3,France,250
+FRA,1984,5,7,16,France,250
+FRA,1988,6,4,6,France,250
+FRA,1992,8,5,16,France,250
+FRA,1996,15,7,15,France,250
+FRA,2000,13,14,11,France,250
+FRA,2004,11,9,13,France,250
+FRA,2008,7,16,18,France,250
+FRA,2012,11,11,13,France,250
+GUF,,,,,French Guiana,254
+PYF,,,,,French Polynesia,258
+ATF,,,,,French Southern Territories,260
+DJI,1988,0,0,1,Djibouti,262
+GAB,2012,0,1,0,Gabon,266
+GEO,1996,0,0,2,Georgia,268
+GEO,2000,0,0,6,Georgia,268
+GEO,2004,2,2,0,Georgia,268
+GEO,2008,3,0,3,Georgia,268
+GEO,2012,1,3,3,Georgia,268
+GMB,,,,,Gambia,270
+PSE,,,,,"Palestine, State of",275
+DEU,,,,,Germany,276
+GER,1896,6,5,2,Germany,276
+GER,1900,3,2,1,Germany,276
+GER,1904,4,4,5,Germany,276
+GER,1908,4,5,6,Germany,276
+GER,1912,6,13,7,Germany,276
+GER,1928,10,7,14,Germany,276
+GER,1932,3,12,5,Germany,276
+GER,1936,33,26,30,Germany,276
+GER,1952,0,7,18,Germany,276
+GER,1992,34,21,28,Germany,276
+GER,1996,21,18,27,Germany,276
+GER,2000,13,17,26,Germany,276
+GER,2004,14,16,20,Germany,276
+GER,2008,17,10,15,Germany,276
+GER,2012,12,20,13,Germany,276
+GHA,1960,0,1,0,Ghana,288
+GHA,1964,0,0,1,Ghana,288
+GHA,1972,0,0,1,Ghana,288
+GHA,1992,0,0,1,Ghana,288
+GIB,,,,,Gibraltar,292
+KIR,,,,,Kiribati,296
+GRC,,,,,Greece,300
+GRE,1896,10,17,18,Greece,300
+GRE,1904,1,0,1,Greece,300
+GRE,1908,0,3,0,Greece,300
+GRE,1912,1,0,1,Greece,300
+GRE,1920,0,1,0,Greece,300
+GRE,1956,0,0,1,Greece,300
+GRE,1960,1,0,0,Greece,300
+GRE,1968,0,0,1,Greece,300
+GRE,1972,0,2,0,Greece,300
+GRE,1980,1,0,2,Greece,300
+GRE,1984,0,1,1,Greece,300
+GRE,1988,0,0,1,Greece,300
+GRE,1992,2,0,0,Greece,300
+GRE,1996,4,4,0,Greece,300
+GRE,2000,4,6,3,Greece,300
+GRE,2004,6,6,4,Greece,300
+GRE,2008,0,2,2,Greece,300
+GRE,2012,0,0,2,Greece,300
+GRL,,,,,Greenland,304
+GRD,,,,,Grenada,308
+GLP,,,,,Guadeloupe,312
+GUM,,,,,Guam,316
+GTM,,,,,Guatemala,320
+GIN,,,,,Guinea,324
+GUY,1980,0,0,1,Guyana,328
+HTI,,,,,Haiti,332
+HMD,,,,,Heard Island and McDonald Islands,334
+VAT,,,,,Holy See,336
+HND,,,,,Honduras,340
+HKG,1996,1,0,0,Hong Kong,344
+HKG,2004,0,1,0,Hong Kong,344
+HKG,2012,0,0,1,Hong Kong,344
+HUN,1896,2,1,3,Hungary,348
+HUN,1900,1,2,2,Hungary,348
+HUN,1904,2,1,1,Hungary,348
+HUN,1908,3,4,2,Hungary,348
+HUN,1912,3,2,3,Hungary,348
+HUN,1924,2,3,4,Hungary,348
+HUN,1928,4,5,0,Hungary,348
+HUN,1932,6,4,5,Hungary,348
+HUN,1936,10,1,5,Hungary,348
+HUN,1948,10,5,11,Hungary,348
+HUN,1952,16,10,16,Hungary,348
+HUN,1956,9,10,7,Hungary,348
+HUN,1960,6,8,7,Hungary,348
+HUN,1964,10,7,5,Hungary,348
+HUN,1968,10,10,12,Hungary,348
+HUN,1972,6,13,16,Hungary,348
+HUN,1976,4,5,13,Hungary,348
+HUN,1980,7,10,15,Hungary,348
+HUN,1988,11,6,6,Hungary,348
+HUN,1992,11,12,7,Hungary,348
+HUN,1996,7,4,10,Hungary,348
+HUN,2000,8,6,3,Hungary,348
+HUN,2004,8,6,3,Hungary,348
+HUN,2008,3,5,2,Hungary,348
+HUN,2012,8,4,6,Hungary,348
+ISL,1956,0,1,0,Iceland,352
+ISL,1984,0,0,1,Iceland,352
+ISL,2000,0,0,1,Iceland,352
+ISL,2008,0,1,0,Iceland,352
+IND,1900,0,2,0,India,356
+IND,1928,1,0,0,India,356
+IND,1932,1,0,0,India,356
+IND,1936,1,0,0,India,356
+IND,1948,1,0,0,India,356
+IND,1952,1,0,1,India,356
+IND,1956,1,0,0,India,356
+IND,1960,0,1,0,India,356
+IND,1964,1,0,0,India,356
+IND,1968,0,0,1,India,356
+IND,1972,0,0,1,India,356
+IND,1980,1,0,0,India,356
+IND,1996,0,0,1,India,356
+IND,2000,0,0,1,India,356
+IND,2004,0,1,0,India,356
+IND,2008,1,0,2,India,356
+IND,2012,0,2,4,India,356
+IDN,,,,,Indonesia,360
+INA,1988,0,1,0,Indonesia,360
+INA,1992,2,2,1,Indonesia,360
+INA,1996,1,1,2,Indonesia,360
+INA,2000,1,4,2,Indonesia,360
+INA,2004,1,1,2,Indonesia,360
+INA,2008,1,2,3,Indonesia,360
+INA,2012,0,2,1,Indonesia,360
+IRI,1948,0,0,1,Iran,364
+IRI,1952,0,3,4,Iran,364
+IRI,1956,2,2,1,Iran,364
+IRI,1960,0,1,3,Iran,364
+IRI,1964,0,0,2,Iran,364
+IRI,1968,2,1,2,Iran,364
+IRI,1972,0,2,1,Iran,364
+IRI,1976,0,1,1,Iran,364
+IRI,1988,0,1,0,Iran,364
+IRI,1992,0,1,2,Iran,364
+IRI,1996,1,1,1,Iran,364
+IRI,2000,3,0,1,Iran,364
+IRI,2004,2,2,2,Iran,364
+IRI,2008,1,0,1,Iran,364
+IRI,2012,5,6,2,Iran,364
+IRN,,,,,Iran (Islamic Republic of),364
+IRQ,1960,0,0,1,Iraq,368
+IRL,1928,1,0,0,Ireland,372
+IRL,1932,2,0,0,Ireland,372
+IRL,1952,0,1,0,Ireland,372
+IRL,1956,1,1,3,Ireland,372
+IRL,1964,0,0,1,Ireland,372
+IRL,1980,0,1,1,Ireland,372
+IRL,1984,0,1,0,Ireland,372
+IRL,1992,1,1,0,Ireland,372
+IRL,1996,3,0,1,Ireland,372
+IRL,2000,0,1,0,Ireland,372
+IRL,2008,0,1,2,Ireland,372
+IRL,2012,1,1,4,Ireland,372
+ISR,1992,0,1,1,Israel,376
+ISR,1996,0,0,1,Israel,376
+ISR,2000,0,0,1,Israel,376
+ISR,2004,1,0,1,Israel,376
+ISR,2008,0,0,1,Israel,376
+ITA,1900,2,2,0,Italy,380
+ITA,1908,2,2,0,Italy,380
+ITA,1912,3,1,2,Italy,380
+ITA,1920,13,5,4,Italy,380
+ITA,1924,8,3,5,Italy,380
+ITA,1928,6,5,7,Italy,380
+ITA,1932,12,12,12,Italy,380
+ITA,1936,8,9,5,Italy,380
+ITA,1948,8,11,8,Italy,380
+ITA,1952,8,9,4,Italy,380
+ITA,1956,8,8,9,Italy,380
+ITA,1960,13,10,13,Italy,380
+ITA,1964,10,10,7,Italy,380
+ITA,1968,3,4,9,Italy,380
+ITA,1972,5,3,10,Italy,380
+ITA,1976,2,7,4,Italy,380
+ITA,1980,8,4,4,Italy,380
+ITA,1984,14,6,12,Italy,380
+ITA,1988,6,4,4,Italy,380
+ITA,1992,6,5,8,Italy,380
+ITA,1996,13,10,12,Italy,380
+ITA,2000,13,8,13,Italy,380
+ITA,2004,10,11,11,Italy,380
+ITA,2008,8,9,10,Italy,380
+ITA,2012,8,9,11,Italy,380
+CIV,1984,0,1,0,Côte d'Ivoire,384
+JAM,1948,1,2,0,Jamaica,388
+JAM,1952,2,3,0,Jamaica,388
+JAM,1968,0,1,0,Jamaica,388
+JAM,1972,0,0,1,Jamaica,388
+JAM,1976,1,1,0,Jamaica,388
+JAM,1980,0,0,3,Jamaica,388
+JAM,1984,0,1,2,Jamaica,388
+JAM,1988,0,2,0,Jamaica,388
+JAM,1992,0,3,1,Jamaica,388
+JAM,1996,1,3,2,Jamaica,388
+JAM,2000,0,5,4,Jamaica,388
+JAM,2004,2,1,2,Jamaica,388
+JAM,2008,6,2,2,Jamaica,388
+JAM,2012,4,4,4,Jamaica,388
+JPN,1920,0,2,0,Japan,392
+JPN,1924,0,0,1,Japan,392
+JPN,1928,2,2,1,Japan,392
+JPN,1932,7,7,4,Japan,392
+JPN,1936,6,4,8,Japan,392
+JPN,1952,1,6,1,Japan,392
+JPN,1956,4,10,3,Japan,392
+JPN,1960,4,7,7,Japan,392
+JPN,1964,16,5,8,Japan,392
+JPN,1968,11,7,7,Japan,392
+JPN,1972,13,8,8,Japan,392
+JPN,1976,9,6,10,Japan,392
+JPN,1984,10,7,14,Japan,392
+JPN,1988,4,3,7,Japan,392
+JPN,1992,3,8,11,Japan,392
+JPN,1996,3,6,5,Japan,392
+JPN,2000,5,8,5,Japan,392
+JPN,2004,16,9,12,Japan,392
+JPN,2008,9,6,10,Japan,392
+JPN,2012,7,14,17,Japan,392
+KAZ,1996,3,4,4,Kazakhstan,398
+KAZ,2000,3,4,0,Kazakhstan,398
+KAZ,2004,1,4,3,Kazakhstan,398
+KAZ,2008,2,4,7,Kazakhstan,398
+KAZ,2012,3,1,6,Kazakhstan,398
+JOR,,,,,Jordan,400
+KEN,1964,0,0,1,Kenya,404
+KEN,1968,3,4,2,Kenya,404
+KEN,1972,2,3,4,Kenya,404
+KEN,1984,1,0,2,Kenya,404
+KEN,1988,5,2,2,Kenya,404
+KEN,1992,2,4,2,Kenya,404
+KEN,1996,1,4,3,Kenya,404
+KEN,2000,2,3,2,Kenya,404
+KEN,2004,1,4,2,Kenya,404
+KEN,2008,6,4,4,Kenya,404
+KEN,2012,2,4,6,Kenya,404
+PRK,1972,1,1,3,Korea (Democratic People's Republic of),408
+PRK,1976,1,1,0,Korea (Democratic People's Republic of),408
+PRK,1980,0,3,2,Korea (Democratic People's Republic of),408
+PRK,1992,4,0,5,Korea (Democratic People's Republic of),408
+PRK,1996,2,1,2,Korea (Democratic People's Republic of),408
+PRK,2000,0,1,3,Korea (Democratic People's Republic of),408
+PRK,2004,0,4,1,Korea (Democratic People's Republic of),408
+PRK,2008,2,1,3,Korea (Democratic People's Republic of),408
+PRK,2012,4,0,2,Korea (Democratic People's Republic of),408
+KOR,1948,0,0,2,"Korea, Republic of",410
+KOR,1952,0,0,2,"Korea, Republic of",410
+KOR,1956,0,1,1,"Korea, Republic of",410
+KOR,1964,0,2,1,"Korea, Republic of",410
+KOR,1968,0,1,1,"Korea, Republic of",410
+KOR,1972,0,1,0,"Korea, Republic of",410
+KOR,1976,1,1,4,"Korea, Republic of",410
+KOR,1984,6,6,7,"Korea, Republic of",410
+KOR,1988,12,10,11,"Korea, Republic of",410
+KOR,1992,12,5,11,"Korea, Republic of",410
+KOR,1996,8,15,5,"Korea, Republic of",410
+KOR,2000,8,10,10,"Korea, Republic of",410
+KOR,2004,9,12,9,"Korea, Republic of",410
+KOR,2008,14,10,8,"Korea, Republic of",410
+KOR,2012,13,8,9,"Korea, Republic of",410
+KUW,2000,0,0,1,kuwait,414
+KUW,2012,0,0,1,kuwait,414
+KWT,,,,,Kuwait,414
+KGZ,2000,0,0,1,Kyrgyzstan,417
+KGZ,2008,0,1,1,Kyrgyzstan,417
+LAO,,,,,Lao People's Democratic Republic,418
+TCH,1920,0,0,3,Czechoslovakia,420
+TCH,1924,1,4,5,Czechoslovakia,420
+TCH,1928,2,5,2,Czechoslovakia,420
+TCH,1932,1,2,1,Czechoslovakia,420
+TCH,1936,3,5,0,Czechoslovakia,420
+TCH,1948,6,2,3,Czechoslovakia,420
+TCH,1952,7,3,3,Czechoslovakia,420
+TCH,1956,1,4,1,Czechoslovakia,420
+TCH,1960,3,2,3,Czechoslovakia,420
+TCH,1964,5,6,3,Czechoslovakia,420
+TCH,1968,7,2,4,Czechoslovakia,420
+TCH,1972,2,4,2,Czechoslovakia,420
+TCH,1976,2,2,4,Czechoslovakia,420
+TCH,1980,2,3,9,Czechoslovakia,420
+TCH,1988,3,3,2,Czechoslovakia,420
+TCH,1992,4,2,1,Czechoslovakia,420
+TGA,1996,0,1,0,Czechoslovakia,420
+LBN,,,,,Lebanon,422
+LSO,,,,,Lesotho,426
+LAT,1932,0,1,0,Latvia,428
+LAT,1936,0,1,1,Latvia,428
+LAT,1992,0,2,1,Latvia,428
+LAT,1996,0,1,0,Latvia,428
+LAT,2000,1,1,1,Latvia,428
+LAT,2004,0,4,0,Latvia,428
+LAT,2008,1,1,1,Latvia,428
+LAT,2012,1,0,1,Latvia,428
+LVA,,,,,Latvia,428
+LBR,,,,,Liberia,430
+LBY,,,,,Libya,434
+LIB,1952,0,1,1,Libya,434
+LIB,1972,0,1,0,Libya,434
+LIB,1980,0,0,1,Libya,434
+LIE,,,,,Liechtenstein,438
+LTU,1992,1,0,1,Lithuania,440
+LTU,1996,0,0,1,Lithuania,440
+LTU,2000,2,0,3,Lithuania,440
+LTU,2004,1,2,0,Lithuania,440
+LTU,2008,0,2,3,Lithuania,440
+LTU,2012,2,1,2,Lithuania,440
+LUX,1920,0,1,0,Luxembourg,442
+LUX,1952,1,0,0,Luxembourg,442
+MAC,,,,,Macao,446
+MDG,,,,,Madagascar,450
+MWI,,,,,Malawi,454
+MAS,1992,0,0,1,Malaysia,458
+MAS,1996,0,1,1,Malaysia,458
+MAS,2008,0,1,0,Malaysia,458
+MAS,2012,0,1,1,Malaysia,458
+MYS,,,,,Malaysia,458
+MDV,,,,,Maldives,462
+MLI,,,,,Mali,466
+MLT,,,,,Malta,470
+MTQ,,,,,Martinique,474
+MRT,,,,,Mauritania,478
+MUS,,,,,Mauritius,480
+MEX,1932,0,2,0,Mexico,484
+MEX,1936,0,0,3,Mexico,484
+MEX,1948,2,1,2,Mexico,484
+MEX,1952,0,1,0,Mexico,484
+MEX,1956,1,0,1,Mexico,484
+MEX,1960,0,0,1,Mexico,484
+MEX,1964,0,0,1,Mexico,484
+MEX,1968,3,3,3,Mexico,484
+MEX,1972,0,1,0,Mexico,484
+MEX,1976,1,0,1,Mexico,484
+MEX,1980,0,1,5,Mexico,484
+MEX,1984,2,3,1,Mexico,484
+MEX,1988,0,0,2,Mexico,484
+MEX,1992,0,1,0,Mexico,484
+MEX,1996,0,0,1,Mexico,484
+MEX,2000,1,2,3,Mexico,484
+MEX,2004,0,3,1,Mexico,484
+MEX,2008,2,0,1,Mexico,484
+MEX,2012,1,3,3,Mexico,484
+MCO,,,,,Monaco,492
+MGL,1968,0,1,3,Mongolia,496
+MGL,1972,0,1,0,Mongolia,496
+MGL,1976,0,1,0,Mongolia,496
+MGL,1980,0,2,2,Mongolia,496
+MGL,1988,0,0,1,Mongolia,496
+MGL,1992,0,0,2,Mongolia,496
+MGL,1996,0,0,1,Mongolia,496
+MGL,2004,0,0,1,Mongolia,496
+MGL,2008,2,2,0,Mongolia,496
+MGL,2012,0,2,3,Mongolia,496
+MNG,,,,,Mongolia,496
+MDA,1996,0,1,1,"Moldova, Republic of",498
+MDA,2000,0,1,1,"Moldova, Republic of",498
+MDA,2008,0,0,1,"Moldova, Republic of",498
+MNE,2012,0,1,0,Montenegro,499
+MSR,,,,,Montserrat,500
+MAR,1960,0,1,0,Morocco,504
+MAR,1984,2,0,0,Morocco,504
+MAR,1988,1,0,2,Morocco,504
+MAR,1992,1,1,1,Morocco,504
+MAR,1996,0,0,2,Morocco,504
+MAR,2000,0,1,4,Morocco,504
+MAR,2004,2,1,0,Morocco,504
+MAR,2008,0,1,1,Morocco,504
+MAR,2012,0,0,1,Morocco,504
+MOZ,1996,0,0,1,Mozambique,508
+MOZ,2000,1,0,0,Mozambique,508
+OMN,,,,,Oman,512
+NAM,1992,0,2,0,Namibia,516
+NAM,1996,0,2,0,Namibia,516
+NRU,,,,,Nauru,520
+NPL,,,,,Nepal,524
+NED,1900,0,1,3,Netherlands,528
+NED,1908,0,0,1,Netherlands,528
+NED,1912,0,0,3,Netherlands,528
+NED,1920,4,2,5,Netherlands,528
+NED,1924,4,1,6,Netherlands,528
+NED,1928,6,10,4,Netherlands,528
+NED,1932,2,5,0,Netherlands,528
+NED,1936,6,4,7,Netherlands,528
+NED,1948,5,2,9,Netherlands,528
+NED,1952,0,5,0,Netherlands,528
+NED,1960,0,1,2,Netherlands,528
+NED,1964,2,4,4,Netherlands,528
+NED,1968,3,3,1,Netherlands,528
+NED,1972,3,1,1,Netherlands,528
+NED,1976,0,2,3,Netherlands,528
+NED,1980,0,1,2,Netherlands,528
+NED,1984,5,2,6,Netherlands,528
+NED,1988,2,2,5,Netherlands,528
+NED,1992,2,6,7,Netherlands,528
+NED,1996,4,6,10,Netherlands,528
+NED,2000,12,10,4,Netherlands,528
+NED,2004,4,9,9,Netherlands,528
+NED,2008,7,6,4,Netherlands,528
+NED,2012,6,6,9,Netherlands,528
+NLD,,,,,Netherlands,528
+CUW,,,,,Curaçao,531
+ABW,,,,,Aruba,533
+SXM,,,,,Sint Maarten (Dutch part),534
+BES,,,,,"Bonaire, Sint Eustatius and Saba",535
+NCL,,,,,New Caledonia,540
+VUT,,,,,Vanuatu,548
+NZL,1920,0,0,1,New Zealand,554
+NZL,1924,0,0,1,New Zealand,554
+NZL,1928,1,0,0,New Zealand,554
+NZL,1932,0,1,0,New Zealand,554
+NZL,1936,1,0,0,New Zealand,554
+NZL,1952,1,0,2,New Zealand,554
+NZL,1956,2,0,0,New Zealand,554
+NZL,1960,2,0,1,New Zealand,554
+NZL,1964,3,0,2,New Zealand,554
+NZL,1968,1,0,2,New Zealand,554
+NZL,1972,1,1,1,New Zealand,554
+NZL,1976,2,1,1,New Zealand,554
+NZL,1984,8,1,2,New Zealand,554
+NZL,1988,3,2,9,New Zealand,554
+NZL,1992,1,5,5,New Zealand,554
+NZL,1996,3,2,2,New Zealand,554
+NZL,2000,1,0,3,New Zealand,554
+NZL,2004,3,2,0,New Zealand,554
+NZL,2008,3,2,4,New Zealand,554
+NZL,2012,6,2,6,New Zealand,554
+NIC,,,,,Nicaragua,558
+NER,,,,,Niger,562
+NIG,1972,0,0,1,Niger,562
+NGA,,,,,Nigeria,566
+NGR,1964,0,0,1,Nigeria,566
+NGR,1972,0,0,1,Nigeria,566
+NGR,1984,0,1,1,Nigeria,566
+NGR,1992,0,3,1,Nigeria,566
+NGR,1996,2,1,3,Nigeria,566
+NGR,2000,0,3,0,Nigeria,566
+NGR,2004,0,0,2,Nigeria,566
+NGR,2008,0,1,3,Nigeria,566
+NIU,,,,,Niue,570
+NFK,,,,,Norfolk Island,574
+NOR,1900,0,2,3,Norway,578
+NOR,1908,2,3,3,Norway,578
+NOR,1912,4,1,4,Norway,578
+NOR,1920,13,11,9,Norway,578
+NOR,1924,5,2,3,Norway,578
+NOR,1928,1,2,1,Norway,578
+NOR,1936,1,3,2,Norway,578
+NOR,1948,1,3,3,Norway,578
+NOR,1952,3,3,0,Norway,578
+NOR,1956,1,0,2,Norway,578
+NOR,1960,1,0,0,Norway,578
+NOR,1968,1,1,0,Norway,578
+NOR,1972,2,1,1,Norway,578
+NOR,1976,1,1,0,Norway,578
+NOR,1984,0,1,2,Norway,578
+NOR,1988,2,3,0,Norway,578
+NOR,1992,2,4,1,Norway,578
+NOR,1996,2,2,3,Norway,578
+NOR,2000,4,3,3,Norway,578
+NOR,2004,5,0,1,Norway,578
+NOR,2008,3,5,1,Norway,578
+NOR,2012,2,1,1,Norway,578
+MNP,,,,,Northern Mariana Islands,580
+UMI,,,,,United States Minor Outlying Islands,581
+FSM,,,,,Micronesia (Federated States of),583
+MHL,,,,,Marshall Islands,584
+PLW,,,,,Palau,585
+PAK,1956,0,1,0,Pakistan,586
+PAK,1960,1,0,1,Pakistan,586
+PAK,1964,0,1,0,Pakistan,586
+PAK,1968,1,0,0,Pakistan,586
+PAK,1972,0,1,0,Pakistan,586
+PAK,1976,0,0,1,Pakistan,586
+PAK,1984,1,0,0,Pakistan,586
+PAK,1988,0,0,1,Pakistan,586
+PAK,1992,0,0,1,Pakistan,586
+PAN,1948,0,0,2,Panama,591
+PAN,2008,1,0,0,Panama,591
+PNG,,,,,Papua New Guinea,598
+PRY,,,,,Paraguay,600
+PER,1948,1,0,0,Peru,604
+PER,1984,0,1,0,Peru,604
+PER,1988,0,1,0,Peru,604
+PER,1992,0,1,0,Peru,604
+PHI,1928,0,0,1,Philippines,608
+PHI,1932,0,0,3,Philippines,608
+PHI,1936,0,0,1,Philippines,608
+PHI,1964,0,1,0,Philippines,608
+PHI,1988,0,0,1,Philippines,608
+PHI,1992,0,0,1,Philippines,608
+PHI,1996,0,1,0,Philippines,608
+PHL,,,,,Philippines,608
+PCN,,,,,Pitcairn,612
+POL,1924,0,1,1,Poland,616
+POL,1928,1,1,3,Poland,616
+POL,1932,2,1,4,Poland,616
+POL,1936,0,3,3,Poland,616
+POL,1948,0,0,1,Poland,616
+POL,1952,1,2,1,Poland,616
+POL,1956,1,4,4,Poland,616
+POL,1960,4,6,11,Poland,616
+POL,1964,7,6,10,Poland,616
+POL,1968,5,2,11,Poland,616
+POL,1972,7,5,9,Poland,616
+POL,1976,7,6,13,Poland,616
+POL,1980,3,14,15,Poland,616
+POL,1988,2,5,9,Poland,616
+POL,1992,3,6,10,Poland,616
+POL,1996,7,5,5,Poland,616
+POL,2000,6,5,3,Poland,616
+POL,2004,3,2,5,Poland,616
+POL,2008,3,6,1,Poland,616
+POL,2012,3,1,6,Poland,616
+POR,1924,0,0,1,Portugal,620
+POR,1936,0,0,1,Portugal,620
+POR,1948,0,1,1,Portugal,620
+POR,1952,0,0,1,Portugal,620
+POR,1960,0,1,0,Portugal,620
+POR,1976,0,2,0,Portugal,620
+POR,1984,1,0,2,Portugal,620
+POR,1988,1,0,0,Portugal,620
+POR,1996,1,0,1,Portugal,620
+POR,2000,0,0,2,Portugal,620
+POR,2004,0,2,1,Portugal,620
+POR,2008,1,1,0,Portugal,620
+POR,2012,0,1,0,Portugal,620
+PRT,,,,,Portugal,620
+GNB,,,,,Guinea-Bissau,624
+TLS,,,,,Timor-Leste,626
+PRI,,,,,Puerto Rico,630
+PUR,1948,0,0,1,Puerto Rico,630
+PUR,1976,0,0,1,Puerto Rico,630
+PUR,1984,0,1,1,Puerto Rico,630
+PUR,1992,0,0,1,Puerto Rico,630
+PUR,1996,0,0,1,Puerto Rico,630
+PUR,2012,0,1,1,Puerto Rico,630
+QAT,1992,0,0,1,Qatar,634
+QAT,2000,0,0,1,Qatar,634
+QAT,2012,0,0,2,Qatar,634
+REU,,,,,Réunion,638
+ROU,1924,0,0,1,Romania,642
+ROU,1936,0,1,0,Romania,642
+ROU,1952,1,1,2,Romania,642
+ROU,1956,5,3,5,Romania,642
+ROU,1960,3,1,6,Romania,642
+ROU,1964,2,4,6,Romania,642
+ROU,1968,4,6,5,Romania,642
+ROU,1972,3,6,7,Romania,642
+ROU,1976,4,9,14,Romania,642
+ROU,1980,6,6,13,Romania,642
+ROU,1984,19,16,17,Romania,642
+ROU,1988,7,11,6,Romania,642
+ROU,1992,4,6,8,Romania,642
+ROU,1996,4,7,8,Romania,642
+ROU,2000,11,6,9,Romania,642
+ROU,2004,8,5,6,Romania,642
+ROU,2008,4,1,3,Romania,642
+ROU,2012,2,5,2,Romania,642
+RUS,1996,26,21,16,Russian Federation,643
+RUS,2000,32,28,29,Russian Federation,643
+RUS,2004,27,27,38,Russian Federation,643
+RUS,2008,23,21,28,Russian Federation,643
+RUS,2012,21,19,32,Russian Federation,643
+RWA,,,,,Rwanda,646
+BLM,,,,,Saint Barthélemy,652
+SHN,,,,,"Saint Helena, Ascension and Tristan da Cunha",654
+KNA,,,,,Saint Kitts and Nevis,659
+AIA,,,,,Anguilla,660
+LCA,,,,,Saint Lucia,662
+MAF,,,,,Saint Martin (French part),663
+SPM,,,,,Saint Pierre and Miquelon,666
+VCT,,,,,Saint Vincent and the Grenadines,670
+SMR,,,,,San Marino,674
+STP,,,,,Sao Tome and Principe,678
+KSA,2000,0,1,1,Saudi Arabia,682
+KSA,2012,0,0,1,Saudi Arabia,682
+SAU,,,,,Saudi Arabia,682
+SEN,1988,0,1,0,Senegal,686
+SRB,2008,0,1,2,Serbia,688
+SRB,2012,1,1,2,Serbia,688
+SYC,,,,,Seychelles,690
+SLE,,,,,Sierra Leone,694
+SGP,2012,0,0,2,Singapore,702
+SVK,1996,1,1,1,Slovakia,703
+SVK,2000,1,3,1,Slovakia,703
+SVK,2004,2,2,2,Slovakia,703
+SVK,2008,3,2,1,Slovakia,703
+SVK,2012,0,1,3,Slovakia,703
+VIE,2000,0,1,0,Viet Nam,704
+VIE,2008,0,1,0,Viet Nam,704
+VNM,,,,,Viet Nam,704
+SLO,1992,0,0,2,Slovenia,705
+SLO,1996,0,2,0,Slovenia,705
+SLO,2000,2,0,0,Slovenia,705
+SLO,2004,0,1,3,Slovenia,705
+SLO,2008,1,2,2,Slovenia,705
+SLO,2012,1,1,2,Slovenia,705
+SVN,,,,,Slovenia,705
+SOM,,,,,Somalia,706
+RSA,1908,1,1,0,South Africa,710
+RSA,1912,4,2,0,South Africa,710
+RSA,1920,3,4,3,South Africa,710
+RSA,1924,1,1,1,South Africa,710
+RSA,1928,1,0,2,South Africa,710
+RSA,1932,2,0,3,South Africa,710
+RSA,1936,0,1,0,South Africa,710
+RSA,1948,2,1,1,South Africa,710
+RSA,1952,2,4,4,South Africa,710
+RSA,1956,0,0,4,South Africa,710
+RSA,1960,0,1,2,South Africa,710
+RSA,1992,0,2,0,South Africa,710
+RSA,1996,3,1,1,South Africa,710
+RSA,2000,0,2,3,South Africa,710
+RSA,2004,1,3,2,South Africa,710
+RSA,2008,0,1,0,South Africa,710
+RSA,2012,3,2,1,South Africa,710
+ZAF,,,,,South Africa,710
+ZIM,1980,1,0,0,Zimbabwe,716
+ZIM,2004,1,1,1,Zimbabwe,716
+ZIM,2008,1,3,0,Zimbabwe,716
+ZWE,,,,,Zimbabwe,716
+ESP,1900,1,0,0,Spain,724
+ESP,1920,0,2,0,Spain,724
+ESP,1928,1,0,0,Spain,724
+ESP,1932,0,0,1,Spain,724
+ESP,1948,0,1,0,Spain,724
+ESP,1952,0,1,0,Spain,724
+ESP,1960,0,0,1,Spain,724
+ESP,1972,0,0,1,Spain,724
+ESP,1976,0,2,0,Spain,724
+ESP,1980,1,3,2,Spain,724
+ESP,1984,1,2,2,Spain,724
+ESP,1988,1,1,2,Spain,724
+ESP,1992,13,7,2,Spain,724
+ESP,1996,5,6,6,Spain,724
+ESP,2000,3,3,5,Spain,724
+ESP,2004,3,11,5,Spain,724
+ESP,2008,5,10,3,Spain,724
+ESP,2012,4,10,4,Spain,724
+SSD,,,,,South Sudan,728
+SDN,,,,,Sudan,729
+SUD,2008,0,1,0,Sudan,729
+ESH,,,,,Western Sahara,732
+SUR,1988,1,0,0,Suriname,740
+SUR,1992,0,0,1,Suriname,740
+SJM,,,,,Svalbard and Jan Mayen,744
+SWZ,,,,,Eswatini,748
+SWE,1900,0,0,1,Sweden,752
+SWE,1908,8,6,10,Sweden,752
+SWE,1912,24,25,18,Sweden,752
+SWE,1920,18,18,24,Sweden,752
+SWE,1924,4,14,12,Sweden,752
+SWE,1928,7,6,12,Sweden,752
+SWE,1932,9,5,9,Sweden,752
+SWE,1936,6,5,9,Sweden,752
+SWE,1948,16,11,17,Sweden,752
+SWE,1952,12,13,10,Sweden,752
+SWE,1956,8,5,6,Sweden,752
+SWE,1960,1,2,3,Sweden,752
+SWE,1964,2,2,4,Sweden,752
+SWE,1968,2,1,1,Sweden,752
+SWE,1972,4,6,6,Sweden,752
+SWE,1976,4,1,0,Sweden,752
+SWE,1980,3,3,6,Sweden,752
+SWE,1984,2,11,6,Sweden,752
+SWE,1988,0,4,7,Sweden,752
+SWE,1992,1,7,4,Sweden,752
+SWE,1996,2,4,2,Sweden,752
+SWE,2000,4,5,3,Sweden,752
+SWE,2004,4,3,1,Sweden,752
+SWE,2008,0,4,1,Sweden,752
+SWE,2012,1,4,3,Sweden,752
+CHE,,,,,Switzerland,756
+SUI,1896,1,2,0,Switzerland,756
+SUI,1900,5,1,1,Switzerland,756
+SUI,1904,1,0,1,Switzerland,756
+SUI,1920,2,2,7,Switzerland,756
+SUI,1924,7,8,10,Switzerland,756
+SUI,1928,7,4,5,Switzerland,756
+SUI,1932,0,1,0,Switzerland,756
+SUI,1936,1,9,5,Switzerland,756
+SUI,1948,5,10,4,Switzerland,756
+SUI,1952,2,6,6,Switzerland,756
+SUI,1956,0,0,1,Switzerland,756
+SUI,1960,0,3,3,Switzerland,756
+SUI,1964,1,3,1,Switzerland,756
+SUI,1968,0,1,5,Switzerland,756
+SUI,1972,0,3,0,Switzerland,756
+SUI,1976,1,2,2,Switzerland,756
+SUI,1980,2,0,0,Switzerland,756
+SUI,1984,0,5,4,Switzerland,756
+SUI,1988,0,3,2,Switzerland,756
+SUI,1992,1,0,0,Switzerland,756
+SUI,1996,4,3,0,Switzerland,756
+SUI,2000,1,7,2,Switzerland,756
+SUI,2004,1,1,3,Switzerland,756
+SUI,2008,2,0,6,Switzerland,756
+SUI,2012,2,2,0,Switzerland,756
+SYR,1984,0,1,0,Syrian Arab Republic,760
+SYR,1996,1,0,0,Syrian Arab Republic,760
+SYR,2004,0,0,1,Syrian Arab Republic,760
+TJK,2008,0,1,1,Tajikistan,762
+TJK,2012,0,0,1,Tajikistan,762
+THA,1976,0,0,1,Thailand,764
+THA,1984,0,1,0,Thailand,764
+THA,1988,0,0,1,Thailand,764
+THA,1992,0,0,1,Thailand,764
+THA,1996,1,0,1,Thailand,764
+THA,2000,1,0,2,Thailand,764
+THA,2004,3,1,4,Thailand,764
+THA,2008,2,2,0,Thailand,764
+THA,2012,0,2,2,Thailand,764
+TGO,,,,,Togo,768
+TKL,,,,,Tokelau,772
+TON,,,,,Tonga,776
+TTO,2012,1,1,2,Trinidad and Tobago,780
+ARE,,,,,United Arab Emirates,784
+UAE,2004,1,0,0,United Arab Emirates,784
+TUN,1964,0,1,1,Tunisia,788
+TUN,1968,1,0,1,Tunisia,788
+TUN,1972,0,1,0,Tunisia,788
+TUN,1996,0,0,1,Tunisia,788
+TUN,2008,1,0,0,Tunisia,788
+TUN,2012,2,0,1,Tunisia,788
+TUR,1936,1,0,1,Turkey,792
+TUR,1948,6,4,2,Turkey,792
+TUR,1952,2,0,1,Turkey,792
+TUR,1956,3,2,2,Turkey,792
+TUR,1960,7,2,0,Turkey,792
+TUR,1964,2,3,1,Turkey,792
+TUR,1968,2,0,0,Turkey,792
+TUR,1972,0,1,0,Turkey,792
+TUR,1984,0,0,3,Turkey,792
+TUR,1988,1,1,0,Turkey,792
+TUR,1992,2,2,2,Turkey,792
+TUR,1996,4,1,1,Turkey,792
+TUR,2000,3,0,2,Turkey,792
+TUR,2004,3,3,4,Turkey,792
+TUR,2008,1,4,3,Turkey,792
+TUR,2012,1,2,1,Turkey,792
+TKM,,,,,Turkmenistan,795
+TCA,,,,,Turks and Caicos Islands,796
+TUV,,,,,Tuvalu,798
+UGA,1968,0,1,1,Uganda,800
+UGA,1972,1,1,0,Uganda,800
+UGA,1980,0,1,0,Uganda,800
+UGA,1996,0,0,1,Uganda,800
+UGA,2012,1,0,0,Uganda,800
+UKR,1996,9,2,12,Ukraine,804
+UKR,2000,3,10,10,Ukraine,804
+UKR,2004,9,5,9,Ukraine,804
+UKR,2008,7,5,15,Ukraine,804
+UKR,2012,6,4,9,Ukraine,804
+MKD,2000,0,0,1,North Macedonia,807
+EGY,1928,2,1,1,Egypt,818
+EGY,1936,2,1,2,Egypt,818
+EGY,1948,2,2,1,Egypt,818
+EGY,1952,0,0,1,Egypt,818
+EGY,1960,0,1,1,Egypt,818
+EGY,1984,0,1,0,Egypt,818
+EGY,2004,1,1,3,Egypt,818
+EGY,2008,0,0,1,Egypt,818
+EGY,2012,0,3,1,Egypt,818
+GBR,1896,2,3,2,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1900,16,6,8,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1904,1,1,0,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1908,56,51,36,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1912,11,16,16,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1920,16,16,14,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1924,9,13,12,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1928,3,10,7,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1932,4,7,5,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1936,4,7,3,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1948,3,14,6,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1952,1,2,8,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1956,6,7,12,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1960,2,6,12,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1964,4,12,2,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1968,5,5,3,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1972,5,5,9,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1976,3,5,5,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1980,5,7,9,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1984,5,12,21,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1988,5,11,9,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1992,5,3,12,United Kingdom of Great Britain and Northern Ireland,826
+GBR,1996,1,8,6,United Kingdom of Great Britain and Northern Ireland,826
+GBR,2000,11,11,8,United Kingdom of Great Britain and Northern Ireland,826
+GBR,2004,9,11,12,United Kingdom of Great Britain and Northern Ireland,826
+GBR,2008,19,13,16,United Kingdom of Great Britain and Northern Ireland,826
+GBR,2012,30,19,19,United Kingdom of Great Britain and Northern Ireland,826
+GGY,,,,,Guernsey,831
+JEY,,,,,Jersey,832
+IMN,,,,,Isle of Man,833
+TZA,,,,,"Tanzania, United Republic of",834
+USA,1896,11,6,2,United States of America,840
+USA,1900,19,14,14,United States of America,840
+USA,1904,77,82,74,United States of America,840
+USA,1908,22,12,12,United States of America,840
+USA,1912,25,18,19,United States of America,840
+USA,1920,41,27,27,United States of America,840
+USA,1924,46,28,27,United States of America,840
+USA,1928,22,18,16,United States of America,840
+USA,1932,41,32,30,United States of America,840
+USA,1936,24,20,12,United States of America,840
+USA,1948,38,27,19,United States of America,840
+USA,1952,41,19,17,United States of America,840
+USA,1956,32,25,17,United States of America,840
+USA,1960,34,21,16,United States of America,840
+USA,1964,36,26,28,United States of America,840
+USA,1968,45,28,34,United States of America,840
+USA,1972,33,32,30,United States of America,840
+USA,1976,35,35,25,United States of America,840
+USA,1984,84,61,30,United States of America,840
+USA,1988,36,32,27,United States of America,840
+USA,1992,37,34,38,United States of America,840
+USA,1996,44,34,26,United States of America,840
+USA,2000,36,24,34,United States of America,840
+USA,2004,37,39,29,United States of America,840
+USA,2008,37,38,36,United States of America,840
+USA,2012,46,28,30,United States of America,840
+VIR,,,,,Virgin Islands (U.S.),850
+BFA,,,,,Burkina Faso,854
+URU,1924,1,0,0,Uruguay,858
+URU,1928,1,0,0,Uruguay,858
+URU,1932,0,0,1,Uruguay,858
+URU,1948,0,1,1,Uruguay,858
+URU,1952,0,0,2,Uruguay,858
+URU,1956,0,0,1,Uruguay,858
+URU,1964,0,0,1,Uruguay,858
+URU,2000,0,1,0,Uruguay,858
+URY,,,,,Uruguay,858
+UZB,1996,0,1,1,Uzbekistan,860
+UZB,2000,1,1,2,Uzbekistan,860
+UZB,2004,2,1,2,Uzbekistan,860
+UZB,2008,1,2,3,Uzbekistan,860
+UZB,2012,1,0,2,Uzbekistan,860
+VEN,1952,0,0,1,Venezuela (Bolivarian Republic of),862
+VEN,1960,0,0,1,Venezuela (Bolivarian Republic of),862
+VEN,1968,1,0,0,Venezuela (Bolivarian Republic of),862
+VEN,1976,0,1,0,Venezuela (Bolivarian Republic of),862
+VEN,1980,0,1,0,Venezuela (Bolivarian Republic of),862
+VEN,1984,0,0,3,Venezuela (Bolivarian Republic of),862
+VEN,2004,0,0,2,Venezuela (Bolivarian Republic of),862
+VEN,2008,0,0,1,Venezuela (Bolivarian Republic of),862
+VEN,2012,1,0,0,Venezuela (Bolivarian Republic of),862
+WLF,,,,,Wallis and Futuna,876
+WSM,,,,,Samoa,882
+TPE,1960,0,1,0,Chinese Taipei,886
+TPE,1968,0,0,1,Chinese Taipei,886
+TPE,1984,0,0,1,Chinese Taipei,886
+TPE,1992,0,1,0,Chinese Taipei,886
+TPE,1996,0,1,0,Chinese Taipei,886
+TPE,2000,0,1,4,Chinese Taipei,886
+TPE,2004,2,2,1,Chinese Taipei,886
+TPE,2008,0,0,4,Chinese Taipei,886
+TPE,2012,1,0,1,Chinese Taipei,886
+YEM,,,,,Yemen,887
+ZAM,1984,0,0,1,Zambia,894
+ZAM,1996,0,1,0,Zambia,894
+ZMB,,,,,Zambia,894

@@ -24,6 +24,24 @@ h1 {
 .city-marker:hover {
     opacity: 1;
 }
+.tooltip2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.tooltip1{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
 
 .tooltip {
     position: absolute;
@@ -64,6 +82,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
 }
+
+.outer-container {
+    display: flex;
+  }
 
 .outer-container {
     display: flex;
@@ -419,6 +441,21 @@ select {
     color: #333;
     text-decoration: underline;
 }
+
+
+#map-container {
+    /* width: 900px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid #ccc; */
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
 
 #line_chart {
     width: 100%; /* Adjust width as needed */
