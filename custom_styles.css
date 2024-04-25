@@ -24,17 +24,17 @@
     font-weight: bold;
 }
 
-#year-range {
+.slider-styled {
     margin-right: 10px;
     margin-top: 5px;
     height: 10px;
 }
 
-#year-range .noUi-connect {
+.slider-styled  .noUi-connect {
     background: #c0392b;
 }
 
-#year-range .noUi-handle {
+.slider-styled .noUi-handle {
     height: 18px;
     width: 18px;
     top: -5px;
