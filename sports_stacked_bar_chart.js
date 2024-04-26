@@ -1,16 +1,13 @@
-// stacked_bar_chart.js
+// sports_stacked_bar_chart.js
 
-// Function to fetch data from CSV file and populate sports dropdown based on selected season
 async function populateSportsDropdown(selectedSeason) {
     const data = await d3.csv("archive/athlete_events.csv");
     const sportsDropdown = document.getElementById("sport1");
     const sports = Array.from(new Set(data.filter(d => d.Season === selectedSeason).map(d => d.Sport)));
 
     sports.sort();
-    // Clear existing options
     sportsDropdown.innerHTML = "";
 
-    // Populate dropdown with sports
     sports.forEach(sport => {
         const option = document.createElement("option");
         option.text = sport;
@@ -22,7 +19,7 @@ async function fetchNOCRegions() {
     return await d3.csv("archive/noc_regions.csv");
 }
 
-// Function to initialize the year range slider
+// Initialize the year range slider
 function initializeYearRangeSlider() {
     return new Promise((resolve, reject) => {
         const yearRange = document.getElementById('year-range');
@@ -47,15 +44,14 @@ function initializeYearRangeSlider() {
     });
 }
 
-// Function to initialize the stacked bar chart and event listeners
+// Initialize the stacked bar chart
 async function initialize() {
     try {
         await Promise.all([populateSportsDropdown("Summer"), initializeYearRangeSlider()]);
 
         const sportDropdown = document.getElementById("sport1");
         const yearRangeSlider = document.getElementById("year-range");
-
-        // Update the stacked bar chart with initial values
+        sportDropdown.value = "Swimming";
         updateChart();
 
         // Event listeners
@@ -66,7 +62,7 @@ async function initialize() {
     }
 }
 
-// Function to update the stacked bar chart based on selected season and sport
+// update the stacked bar chart based on selected season and sport
 function updateChart() {
     const selectedSport = document.getElementById("sport1").value;
     const yearRange = document.getElementById("year-range").noUiSlider.get();
@@ -77,7 +73,6 @@ function updateChart() {
     createStackedBarChart(selectedSport, startYear, endYear, selectedSeason);
 }
 
-// Event listeners for toggle buttons
 document.getElementById("summer-toggle1").addEventListener("click", function() {
     document.getElementById("summer-toggle1").classList.add("active");
     document.getElementById("winter-toggle1").classList.remove("active");
@@ -125,7 +120,6 @@ function emptyFilteredDataVisualization() {
 
 async function createStackedBarChart(selectedSport, startYear, endYear, selectedSeason) {
     try {
-        // Fetch data from CSV files
         const [athleteData, nocRegions] = await Promise.all([d3.csv("archive/athlete_events.csv"), fetchNOCRegions()]);
 
         startYear = Math.round(startYear); 
@@ -143,7 +137,7 @@ async function createStackedBarChart(selectedSport, startYear, endYear, selected
         // Check if filteredData is empty
         if (filteredData.length === 0) {
             emptyFilteredDataVisualization();
-            return; // Exit function
+            return;
         }
         
         d3.select("#chart1 svg").selectAll("text").remove();
@@ -161,7 +155,6 @@ async function createStackedBarChart(selectedSport, startYear, endYear, selected
             };
         });
 
-        // Extract relevant data
         const medalData = d3.rollup(uniqueData, 
             v => ({ 
                 gold: v.filter(d => d.Medal === 'Gold').length,
@@ -170,8 +163,8 @@ async function createStackedBarChart(selectedSport, startYear, endYear, selected
             }), 
             d => d.NOC
         );
-        console.log("WTF", uniqueData);
-        console.log("Data", medalData);
+        // console.log("Check", uniqueData);
+        // console.log("Data", medalData);
 
         // Convert the map to an object with regions as keys and aggregated medal counts as values
         const aggregatedMedals = Array.from(medalData, ([noc, medals]) => {
@@ -203,7 +196,7 @@ async function createStackedBarChart(selectedSport, startYear, endYear, selected
             return b.bronze - a.bronze;
         });
 
-        console.log("After", stackedMedalData);
+        // console.log("After", stackedMedalData);
         
         const totalMedals = stackedMedalData.reduce((acc, country) => {
             acc.gold += country.gold;
@@ -234,7 +227,7 @@ async function createStackedBarChart(selectedSport, startYear, endYear, selected
         // Pass stackedMedalDataWithRest to updateChartVisualization function
         updateChartVisualization(stackedMedalDataWithRest);
 
-        console.log("Data passed to updateChartVisualization:", topCountries);
+        // console.log("Data passed to updateChartVisualization:", topCountries);
         // updateChartVisualization(topCountries);
 
     } catch (error) {
@@ -243,12 +236,10 @@ async function createStackedBarChart(selectedSport, startYear, endYear, selected
 }
 
 function updateChartVisualization(data) {
-    // Define chart dimensions
     const width = 800;
     const height = 400;
     const margin = { top: 30, right: 20, bottom: 60, left: 60 }; // Increased bottom and left margins
 
-    // Create SVG element
     const svg = d3.select("#chart1 svg");
 
     // Define color scale
@@ -292,11 +283,9 @@ function updateChartVisualization(data) {
             // Highlight all bars of the same class
             svg.selectAll(`.bar.${region.toLowerCase()}`)
                 .attr("opacity", 1.0);
-            // Dim the rest of the bars
             svg.selectAll(".bar")
                 .filter(bar => bar.data.region !== region)
                 .attr("opacity", 0.2);
-            // Show tooltip and popup
             d3.select("#popup")
             .style("display", "block")
             .html(`<strong>${region}</strong><br>
@@ -309,7 +298,6 @@ function updateChartVisualization(data) {
         .on("mouseout", function() {
             // Reset opacity for all bars
             svg.selectAll("rect").attr("opacity", 1);
-            // Hide tooltip and popup
             d3.select("#popup").style("display", "none");
         });
 
@@ -322,9 +310,9 @@ function updateChartVisualization(data) {
 
     // Append x-axis title separately
     svg.append("text")
-    .attr("class", "axis-title") // Apply the CSS class
+    .attr("class", "axis-title")
     .attr("x", margin.left + (width - margin.left - margin.right) / 2)
-    .attr("y", height - 10) // Adjusted y position
+    .attr("y", height - 10) 
     .attr("fill", "#000")
     .attr("text-anchor", "middle")
     .text("Region");
@@ -339,8 +327,8 @@ function updateChartVisualization(data) {
 
     // Append y-axis title separately
     svg.append("text")
-    .attr("class", "axis-title") // Apply the CSS class
-    .attr("transform", `translate(${margin.left - 40},${height / 2-10}) rotate(-90)`) // Adjusted position
+    .attr("class", "axis-title") 
+    .attr("transform", `translate(${margin.left - 40},${height / 2-10}) rotate(-90)`)
     .attr("fill", "#000")
     .attr("text-anchor", "middle")
     .text("Number of Medals");
@@ -348,11 +336,10 @@ function updateChartVisualization(data) {
 
     // Add legend
     const legend = svg => {
-        const legendWidth = 100; // Adjust the width of the legend as needed
-        const legendHeight = color.domain().length * 20; // Calculate legend height based on the number of categories
-
+        const legendWidth = 100;
+        const legendHeight = color.domain().length * 20;
         const g = svg
-            .attr("transform", `translate(${width - margin.right - legendWidth},${margin.top})`) // Position the legend to the right of the chart
+            .attr("transform", `translate(${width - margin.right - legendWidth},${margin.top})`) 
             .attr("text-anchor", "end")
             .attr("font-family", "sans-serif")
             .attr("font-size", 12)
@@ -371,7 +358,7 @@ function updateChartVisualization(data) {
             .attr("x", -24)
             .attr("y", 9.5)
             .attr("dy", "0.35em")
-            .text(d => capitalizeFirstLetter(d)); // Capitalize the first letter of the legend
+            .text(d => capitalizeFirstLetter(d)); 
 
         function capitalizeFirstLetter(string) {
             return string.charAt(0).toUpperCase() + string.slice(1);
