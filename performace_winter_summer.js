@@ -1,24 +1,24 @@
-// Function to fetch data from CSV file and populate sports dropdown based on selected season
-async function selectSportPerformance() {
-    const data = await d3.csv("archive/athlete_events.csv");
-    const sportsDropdown = document.getElementById("sport-selected");
-    const sports = Array.from(new Set(data.map(d => d.Sport)));
+// // Function to fetch data from CSV file and populate sports dropdown based on selected season
+// async function selectSportPerformance() {
+//     const data = await d3.csv("archive/athlete_events.csv");
+//     const sportsDropdown = document.getElementById("sport-selected");
+//     const sports = Array.from(new Set(data.map(d => d.Sport)));
 
-    sports.sort();
-    // Clear existing options
-    sportsDropdown.innerHTML = "";
+//     sports.sort();
+//     // Clear existing options
+//     sportsDropdown.innerHTML = "";
 
-    // Populate dropdown with sports
-    sports.forEach(sport => {
-        const option = document.createElement("option");
-        option.text = sport;
-        sportsDropdown.add(option);
-    });
-}
+//     // Populate dropdown with sports
+//     sports.forEach(sport => {
+//         const option = document.createElement("option");
+//         option.text = sport;
+//         sportsDropdown.add(option);
+//     });
+// }
 
-async function fetchNOCRegions() {
-    return await d3.csv("archive/noc_regions.csv");
-}
+// async function fetchNOCRegions() {
+//     return await d3.csv("archive/noc_regions.csv");
+// }
 
 
 // Function to initialize the year range slider
@@ -50,16 +50,19 @@ function selectYearPerformance() {
 // Function to initialize the stacked bar chart and event listeners
 async function initializePerformance() {
     try {
-        await Promise.all([selectSportPerformance(), selectYearPerformance()]);
+        await Promise.all([selectYearPerformance()]);
+        // await Promise.all([selectSportPerformance(), selectYearPerformance()]);
 
-        const sportDropdown = document.getElementById("sport-selected");
+        // const sportDropdown = document.getElementById("sport-selected");
         const yearRangeSlider = document.getElementById("year-range-selected");
 
+
+        sportDropdown.value = "Swimming";
         // Update the stacked bar chart with initial values
         updateChartPerformance();
 
         // Event listeners
-        sportDropdown.addEventListener("change", updateChartPerformance);
+        // sportDropdown.addEventListener("change", updateChartPerformance);
         yearRangeSlider.noUiSlider.on('change', updateChartPerformance);
     } catch (error) {
         console.log("Error initializing:", error);
@@ -69,12 +72,13 @@ async function initializePerformance() {
 
 // Function to update the stacked bar chart based on selected season and sport
 function updateChartPerformance() {
-    const selectedSport = document.getElementById("sport-selected").value;
+    // const selectedSport = document.getElementById("sport-selected").value;
     const yearRange = document.getElementById("year-range-selected").noUiSlider.get();
     const startYear = Math.round(yearRange[0]);
     const endYear = Math.round(yearRange[1]);
 
-    createMedalsChart(selectedSport, startYear, endYear);
+    // createMedalsChart(selectedSport, startYear, endYear);
+    createMedalsChart(startYear, endYear);
 }
 
 // Call initialize function when DOM is loaded
@@ -100,11 +104,12 @@ function emptyPerformanceDataVisualization() {
 
 }
 
-async function createMedalsChart(selectedSport, startYear, endYear) {
+// async function createMedalsChart(selectedSport, startYear, endYear) {
+async function createMedalsChart(startYear, endYear) {
     try {
         // Fetch data from CSV files
 
-        console.log(selectedSport, startYear, endYear)
+        // console.log(selectedSport, startYear, endYear)
         const [athleteData, nocRegions] = await Promise.all([d3.csv("archive/athlete_events.csv"), fetchNOCRegions()]);
 
         startYear = Math.round(startYear); 
@@ -129,7 +134,7 @@ async function createMedalsChart(selectedSport, startYear, endYear) {
         //     emptyFilteredDataVisualization();
         //     return; // Exit function
         // }
-        console.log("hi")
+        // console.log("hi")
         
         // Filter data for Summer and Winter Olympics separately
         // const summerData = athleteData.filter(d => d.Season === "Summer");
@@ -224,7 +229,7 @@ async function createMedalsChart(selectedSport, startYear, endYear) {
             ...medals,
             total: medals.gold + medals.silver + medals.bronze
         }));
-        console.log(stackedWinterMedalData)
+        // console.log(stackedWinterMedalData)
 
         // Combine the data for both Summer and Winter Olympics
         const combinedData = [];
@@ -402,12 +407,12 @@ function updatePerformanceChart(data) {
         .text(function(d) { return d.winterTotal; });
 
     // Add country labels on the extreme left
-    svg.selectAll('.country-label')
+    svg.selectAll('.y-axis-label')
         .data(data)
         .enter()
         .append('text')
         .attr('class', 'country-label')
-        .attr('x', -5) // Adjust position to the left of the chart
+        .attr('x', -18) // Adjust position to the left of the chart
         .attr('y', function(d) { return yScale(d.region) + yScale.bandwidth() / 2; }) // Center vertically
         .attr('dy', '0.35em') // Center horizontally
         .text(function(d) { return d.region; });
@@ -434,8 +439,10 @@ function updatePerformanceChart(data) {
         .style('stroke', '#ccc');
 
     // Add x-axis labels
+    let xRange = (parseInt(maxTotal/500)+1)*500;
+    let numScale = xRange / 5;
     svg.selectAll('.x-axis-label')
-        .data(d3.range(-2500, 2501, 500))
+        .data(d3.range(- xRange, xRange+1, numScale))
         .enter()
         .append('text')
         .attr('class', 'x-axis-label')
@@ -456,9 +463,9 @@ function updatePerformanceChart(data) {
     .attr('class', 'y-axis-title')
     .attr('transform', 'rotate(-90)')
     .attr('x', -height / 2)
-    .attr('y', -margin.left + 20)
+    .attr('y', -margin.left + 14)
     .style('text-anchor', 'middle')
-    .text('Countries');
+    .text('Region');
 
     // Add X-axis title
     svg.append('text')
