@@ -1,25 +1,3 @@
-// // Function to fetch data from CSV file and populate sports dropdown based on selected season
-// async function selectSportPerformance() {
-//     const data = await d3.csv("archive/athlete_events.csv");
-//     const sportsDropdown = document.getElementById("sport-selected");
-//     const sports = Array.from(new Set(data.map(d => d.Sport)));
-
-//     sports.sort();
-//     // Clear existing options
-//     sportsDropdown.innerHTML = "";
-
-//     // Populate dropdown with sports
-//     sports.forEach(sport => {
-//         const option = document.createElement("option");
-//         option.text = sport;
-//         sportsDropdown.add(option);
-//     });
-// }
-
-// async function fetchNOCRegions() {
-//     return await d3.csv("archive/noc_regions.csv");
-// }
-
 
 // Function to initialize the year range slider
 function selectYearPerformance() {
@@ -121,24 +99,9 @@ async function createMedalsChart(startYear, endYear) {
         if (startYear === endYear) {
             endYear += 0.5; 
         } 
-        // else {
-        //     winterData = athleteData.filter(d => d.Year >= startYear && d.Year <= endYear && d.Sport === selectedSport && d.Season === "Winter");
-        // }
-        // summerData = athleteData.filter(d => d.Year >= startYear && d.Year <= endYear && d.Sport === selectedSport && d.Season === "Summer");
-        // winterData = athleteData.filter(d => d.Year >= startYear && d.Year <= endYear && d.Sport === selectedSport && d.Season === "Winter");
+        
         summerData = athleteData.filter(d => d.Year >= startYear && d.Year <= endYear && d.Season === "Summer");
         winterData = athleteData.filter(d => d.Year >= startYear && d.Year <= endYear && d.Season === "Winter");
-        
-        // Check if filteredData is empty
-        // if (summerData.length === 0 && winterData.length === 0) {
-        //     emptyFilteredDataVisualization();
-        //     return; // Exit function
-        // }
-        // console.log("hi")
-        
-        // Filter data for Summer and Winter Olympics separately
-        // const summerData = athleteData.filter(d => d.Season === "Summer");
-        // const winterData = athleteData.filter(d => d.Season === "Winter");
         
         // Process data for Summer Olympics
         const uniqueSummerData = Array.from(new Set(summerData.map(createKey)))
@@ -299,7 +262,7 @@ function updatePerformanceChart(data) {
         .data(data)
         .enter()
         .append('rect')
-        .attr('class', 'summer-bar')
+        .attr('class', function(d) { return 'summer-bar ' + d.region; }) 
         .attr('x', function(d) { return width / 2 - xScale(Math.abs(d.summerTotal)) - center_space + 1; }) // Start from the same position as winter bars
         .attr('y', function(d) { return yScale(d.region); })
         .attr('width', function(d) { return xScale(Math.abs(d.summerTotal)) - center_space + 1; }) // Adjust width based on value
@@ -313,13 +276,19 @@ function updatePerformanceChart(data) {
             const summerTotal = d.summerTotal;
             const winterTotal = d.winterTotal;
         
-            // Highlight the current bar
-            d3.select(this).attr("opacity", 1.0);
+            // // Highlight the current bar
+            // d3.select(this).attr("opacity", 1.0);
             
-            // Dim all other bars
-            svg.selectAll(".summer-bar:not(:hover)").attr("opacity", 0.2);
-            svg.selectAll(".winter-bar:not(:hover)").attr("opacity", 0.2);
+            // // Dim all other bars
+            // svg.selectAll(".summer-bar:not(:hover)").attr("opacity", 0.2);
+            // svg.selectAll(".winter-bar:not(:hover)").attr("opacity", 0.2);
         
+            // Highlight the current bars
+            svg.selectAll(`.${region}`).attr("opacity", 1.0);
+
+            // Dim all other bars
+            svg.selectAll(".summer-bar:not(." + region + ")").attr("opacity", 0.2);
+            svg.selectAll(".winter-bar:not(." + region + ")").attr("opacity", 0.2);
             // Show tooltip with region name and medal counts
             d3.select("#popup")
                 .style("display", "block")
@@ -345,7 +314,7 @@ function updatePerformanceChart(data) {
         .data(data)
         .enter()
         .append('rect')
-        .attr('class', 'winter-bar')
+        .attr('class', function(d) { return 'winter-bar ' + d.region; }) 
         .attr('x', function(d) { return width / 2 + center_space; }) // Start from the center line
         .attr('y', function(d) { return yScale(d.region); })
         .attr('width', function(d) { return xScale(Math.abs(d.winterTotal)) + center_space; }) // Adjust width based on value
@@ -359,13 +328,19 @@ function updatePerformanceChart(data) {
             const summerTotal = d.summerTotal;
             const winterTotal = d.winterTotal;
         
-            // Highlight the current bar
-            d3.select(this).attr("opacity", 1.0);
+            // // Highlight the current bar
+            // d3.select(this).attr("opacity", 1.0);
             
-            // Dim all other bars
-            svg.selectAll(".summer-bar:not(:hover)").attr("opacity", 0.2);
-            svg.selectAll(".winter-bar:not(:hover)").attr("opacity", 0.2);
+            // // Dim all other bars
+            // svg.selectAll(".summer-bar:not(:hover)").attr("opacity", 0.2);
+            // svg.selectAll(".winter-bar:not(:hover)").attr("opacity", 0.2);
         
+            // Highlight the current bars
+            svg.selectAll(`.${region}`).attr("opacity", 1.0);
+
+            // Dim all other bars
+            svg.selectAll(".summer-bar:not(." + region + ")").attr("opacity", 0.2);
+            svg.selectAll(".winter-bar:not(." + region + ")").attr("opacity", 0.2);
             // Show tooltip with region name and medal counts
             d3.select("#popup")
                 .style("display", "block")
@@ -476,5 +451,3 @@ function updatePerformanceChart(data) {
     .text('Number of Medals Won');
 
 }
-    
-// createMedalsChart();
