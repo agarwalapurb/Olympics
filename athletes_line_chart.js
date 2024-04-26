@@ -18,7 +18,7 @@ d3.csv("archive/athlete_events.csv")
   .then(function (data) {
     // Define initial demographic
     let selectedDemographic = "Age";
-    let selectedSeason = "Summer"; // Default to Summer
+    let selectedSeason = "Summer";
     updateChart(selectedDemographic, selectedSeason);
 
     // Event listener for dropdown change
@@ -96,7 +96,7 @@ d3.csv("archive/athlete_events.csv")
       }
 
       // Set up chart dimensions
-      const margin = { top: 50, right: 30, bottom: 50, left: 60 }; // Adjusted margins
+      const margin = { top: 50, right: 30, bottom: 50, left: 60 };
       const width = 600 - margin.left - margin.right;
       const height = 400 - margin.top - margin.bottom;
 
@@ -124,7 +124,6 @@ d3.csv("archive/athlete_events.csv")
         .nice()
         .range([height, 0]);
 
-      // Draw bars
       svg
         .selectAll("rect")
         .data(counts)
@@ -134,7 +133,7 @@ d3.csv("archive/athlete_events.csv")
         .attr("y", (d) => y(d.count))
         .attr("width", x.bandwidth())
         .attr("height", (d) => height - y(d.count))
-        .attr("fill", (d) => colorScale(d.count)) // Using color scale
+        .attr("fill", (d) => colorScale(d.count))
         .on("mouseover", function (d) {
           // Add value text on hover
           d3.select(this).attr("opacity", 0.7);
@@ -145,12 +144,12 @@ d3.csv("archive/athlete_events.csv")
             .append("text")
             .attr("class", "bar-label")
             .attr("x", (d, i) => x(ranges[i]) + x.bandwidth() / 2) // Center text within each bar
-            .attr("y", (d) => y(d.count) - 5) // Adjusted y position
+            .attr("y", (d) => y(d.count) - 5)
             .attr("dy", "-0.7em")
             .attr("text-anchor", "middle")
-            .attr("fill", "black") // Set text color to black
-            .style("font-size", "12px") // Set font size
-            .style("font-weight", "bold") // Set font weight
+            .attr("fill", "black")
+            .style("font-size", "12px")
+            .style("font-weight", "bold")
             .text((d) => d.count);
         })
         .on("mouseout", function () {
@@ -180,7 +179,7 @@ d3.csv("archive/athlete_events.csv")
         .attr("dy", "1em")
         .style("text-anchor", "middle")
         .text("Number of Medals")
-        .attr("class", "y-axis-label"); // Add a class for styling
+        .attr("class", "y-axis-label");
 
       // Update x-axis label
       d3.select("#x-axis-label").text(demographic).style("display", "block");
