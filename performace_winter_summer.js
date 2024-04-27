@@ -31,16 +31,16 @@ async function initializePerformance() {
         await Promise.all([selectYearPerformance()]);
         // await Promise.all([selectSportPerformance(), selectYearPerformance()]);
 
-        // const sportDropdown = document.getElementById("sport-selected");
+        const sortDropdown = document.getElementById("sort-dropdown");
         const yearRangeSlider = document.getElementById("year-range-selected");
-
-
-        sportDropdown.value = "Swimming";
+        console.log(sortDropdown)
+        
         // Update the stacked bar chart with initial values
         updateChartPerformance();
 
         // Event listeners
         // sportDropdown.addEventListener("change", updateChartPerformance);
+        sortDropdown.addEventListener('change', updateChartPerformance);
         yearRangeSlider.noUiSlider.on('change', updateChartPerformance);
     } catch (error) {
         console.log("Error initializing:", error);
@@ -54,9 +54,13 @@ function updateChartPerformance() {
     const yearRange = document.getElementById("year-range-selected").noUiSlider.get();
     const startYear = Math.round(yearRange[0]);
     const endYear = Math.round(yearRange[1]);
+    const sortOption = document.getElementById('sort-dropdown').value === 'overall' ? 'overall' :
+                       document.getElementById('sort-dropdown').value === 'summer' ? 'summer' :
+                       'winter';
 
     // createMedalsChart(selectedSport, startYear, endYear);
-    createMedalsChart(startYear, endYear);
+    console.log(sortOption)
+    createMedalsChart(startYear, endYear, sortOption);
 }
 
 // Call initialize function when DOM is loaded
@@ -83,7 +87,7 @@ function emptyPerformanceDataVisualization() {
 }
 
 // async function createMedalsChart(selectedSport, startYear, endYear) {
-async function createMedalsChart(startYear, endYear) {
+async function createMedalsChart(startYear, endYear, sortOption) {
     try {
         // Fetch data from CSV files
 
@@ -213,10 +217,18 @@ async function createMedalsChart(startYear, endYear) {
         });
         
         // Sort the combined data by total medals
-        combinedData.sort((a, b) => (b.summerTotal + b.winterTotal) - (a.summerTotal + a.winterTotal));
+        let sortedData;
+        if (sortOption === 'summer') {
+            sortedData = combinedData.slice().sort((a, b) => b.summerTotal - a.summerTotal);
+        } else if (sortOption === 'winter') {
+            sortedData = combinedData.slice().sort((a, b) => b.winterTotal - a.winterTotal);
+        } else {
+            sortedData = combinedData.slice().sort((a, b) => (b.summerTotal + b.winterTotal) - (a.summerTotal + a.winterTotal));
+        }
+        // combinedData.sort((a, b) => (b.summerTotal + b.winterTotal) - (a.summerTotal + a.winterTotal));
 
         // Take top 10 countries
-        const topCountries = combinedData.slice(0, 10).reverse();
+        const topCountries = sortedData.slice(0, 10).reverse();
 
         // Update chart visualization
         console.log(topCountries)
